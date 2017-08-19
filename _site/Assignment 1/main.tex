@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newdate{date}{20}{01}{2017}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsfonts}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Assignment 1}
+\date{\displaydate{date}}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item Given a function $f:X \rightarrow X$ such that $f(x+y)=f(xy)$ when:
+\begin{enumerate}
+\item $x,y \geq 1$ and $X={1,2,3,\dots}$
+\item $x,y \geq 4$ and $X={8,9,10,\dots}$
+\end{enumerate}
+Find the value of $f(9)$ when $f(8)=9$. (* *)
+
+\item Count  the number of rectangles present in a rectangular grid consisting of 100 rows and 95 columns. (*)
+
+\item Give a story proof as well as a mathematical proof for the following:
+\begin{equation}
+{n \choose m}{m \choose k} = {n \choose k} {{n-k} \choose {m-k}} \hspace{3cm}(* *)
+\end{equation}
+
+\item Find the value of the following. Provide a story proof used in determining the values: (* *)
+\begin{equation}
+{n \choose 0} + {n \choose 1} + {n \choose 2} + \dots {n \choose n}
+\end{equation}
+\begin{equation}
+{n \choose 0}^2 + {n \choose 1}^2 + {n \choose 2}^2 + \dots {n \choose n}^2
+\end{equation}
+
+\item Six boxes are colored red, black, blue, yellow, orange and green. In how man ways can you put 20 identical balls into these boxes such that no box is empty? (* *)
+
+\item A playground has 4 see-saws placed right next to each other. 31 students from a class visit the playground and wish to play on the see-saw. How many ways can the students be placed on the see-saw if 10 of he students wish to sit only on the left side, 12 on the right side and remaining 9 can sit on either side? (* * *)
+
+\item In how many ways can you triangulate a regular polygon having $n+2$ sides? (* *)
+
+\item Check if $(n^2 +n+41)$ always results in a prime, for all positive integers $n$. If yes, prove using induction. (*)
+
+\item Prove that ${n \choose k} {p^k}(1-p)^{n-k} \leq 1$ for any $n,k \in \mathbb{N}$ and $0 \leq p \leq 1$.
+
+\item Given a $2^n \times 2^n$ chess board with one square removed, show that you can tile the chessboard using triominoes (L shaped dominoes). (* * *)
+
+\item Prove that $\left( \sum_{k=0}^{n} {n \choose {n-k}} x^{2k-n} \geq 2^n \right)$, for $n \in \mathbb{N}$ and $x \in \mathbb{R}^+$. (*)
+
+\item Let $x+ 1/x$ be an integer for $x \in \mathbb{R}^+$. Prove that $x^n+ 1/x^n$ is an integer for $n \in \mathbb{N}$. (* *)
+---
+\item There are 8 guests at a party and they sit around an octagonal table with one guest at each edge. If each place at the table is marked with a different person’s name and initially everybody is sitting in the wrong place, prove that the table can be rotated in such a way that at least 2 people are sitting in the correct places. (* *)
+
+\item There are n people present in a room. Prove that among them there are two people who have the same number of acquaintances in the room. (* *)
+
+\item In any group of six people, prove that there are either 3 mutual friends or 3 mutual strangers. Is the same true when the group has 5 people? (* * *)
+
+\item A box contains 6 red, 8 green, 10 blue, 12 yellow and 15 white balls. What is the minimum no. of balls we have to choose randomly from the box to ensure that we get 9 balls of same color?
+
+\item How many ways are there to assign five different jobs to four different employees if every employee is assigned at least one job? (*)
+
+\item We are given the plot of a function $f$.  (*)
+\begin{enumerate}
+\item There exists a horizontal line that intersects the plot at three places. What can we say about the type of this function? Give an example of such a function.
+\item There exists a vertical line that does not intersect the plot of the graph. What can we say about the type of this function? Give an example of such a function.
+\end{enumerate}
+\item A binary relation can have the properties of reflexive, symmetric and transitive. thus we have 8 possible different subsets of these properties a binary relation can have. Give
+an example of a relation in each of the eight cases.
+
+\item How many relations are there on a set with $n$ elements that are: (* *)
+\begin{enumerate}
+\item Symmetric
+\item Antisymmetric
+\item Asymmetric
+\item Irreflexive
+\item Reflexive and symmetric
+\item Neither reflexive nor irreflexive
+\end{enumerate}
+
+
+
+
+\end{enumerate}
+\end{document}

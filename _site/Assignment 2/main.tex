@@ -1,0 +1,115 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newdate{date}{17}{02}{2017}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsfonts}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Assignment 2}
+\author{Deadline \date{\displaydate{date}} }
+\begin{document}
+\maketitle
+
+
+\begin{enumerate}
+
+\item Suppose that $p_1,p_2,p_3$ are distinct primes and that $n,k \in \mathbb{Z}^+$ with $n=p_1^5\ p_2^3\ p_3^k$. Let $A$ be the set of positive integer divisors of $n$ and define a relation $\mathbb{R}$ on $A$ by $x\mathbb{R}y$ if $x$ exactly divides $y$. If there are 5880 ordered pairs in $\mathbb{R}$, determine $k$ and $|A|$. 
+
+\item Let $A$ be a set with $|A|=n$, and let $\mathbb{R}$ be an equivalence relation on $A$ with $|\mathbb{R}| = r$. Why is $r-n$ always even?
+
+\item A relation $\mathbb{R}$ on a set $A$ is called \textit{irreflexive} if for all $a \in A, (a,a) \notin \mathbb{R}$. Let $\mathbb{R}$ be a non-empty relation on $A$. Prove that if $\mathbb{R}$ satisfies two of the following properties - reflexive, symmetric, transitive, then it cannot satisfy the third.
+
+\item Given a set $A$ with $n$ elements and a relation $\mathbb{R}$ on $A$, let $M$ denote the relation matrix for $\mathbb{R}$. Then, prove the following:
+\begin{enumerate}
+\item $\mathbb{R}$ is \textit{reflexive} iff $I_n \leq M$.
+\item $\mathbb{R}$ is \textit{symmetric} iff $M=M^T$
+\item $\mathbb{R}$ is transitive iff $M.M = M^2 \leq M$
+\end{enumerate}
+
+\item Prove that $M(\mathbb{R}) = \textbf{0}$ iff $\mathbb{R} = \phi$.
+
+\item Prove that $M(\mathbb{R}) = \textbf{1}$ iff $\mathbb{R} = A \times A$.
+
+\item Prove that $M(\mathbb{R})^n = [M(\mathbb{R}]^n$, for all $n \in \mathbb{Z}^+$. 
+
+\item Let $f: A \rightarrow B$. If {$B_1,B_2 \dots B_n$} is a partition of $B$, prove that {$f^{-1}(B_i)| 1\leq i \leq n, f^{-1}(B_i) \neq \phi $} is a partition of $A$. 
+
+\item Suppose that $\mathbb{R}$ and $S$ are reflexive relations on a set $A$. Prove or disprove each of these statements:
+\begin{enumerate}
+\item $\mathbb{R} \cup S$ is reflexive
+\item $\mathbb{R} \cap S$ is reflexive
+\item $\mathbb{R} - S$ is irreflexive
+$\mathbb{R} \circ S$ is reflexive
+\end{enumerate}
+
+\item Suppose that the relation $\mathbb{R}$ is irreflexive, is $\mathbb{R}^2$ necessarily irreflexive? Give reasons.
+
+\item Let $\mathbb{R}$be the relation o the set of all metro stations in Delhi, such that $(a,b) \in \mathbb{R}$ if it is possible to go from stop $a$ to stop $b$ without changing trains. What is $\mathbb{R}^n$, for a positive integer $n$?
+
+\item Let $n$ be a positive integer and $S$ a set of strings. Suppose that 
+$R_n$ is the relation on $S$ such
+that $sR_nt$ if and only if $s = t$, or both $s$ and $t$ have at least $n$ characters and the first $n$ characters
+of $s$ and $t$ are the same. That is, a string of fewer than $n$ characters is related only to itself; a string $s$ with at least $n$ characters is related to a string $t$ if and only if $t$ has at least $n$ characters
+and $t$ begins with the $n$ characters at the start of $s$. For example, let $n = 3$ and let $S$ be the set
+of all bit strings. Then $sR_3t$ either when $s = t$ or both $s$ and $t$ are bit strings of length 3 or more
+that begin with the same three bits. For instance, $01R_301$ and $00111R_3 00101$, but $01\not R_3 010$
+and $01011\not  R_301110$.
+Show that for every set $S$ of strings and every positive integer $n$, $R_n$ is an equivalence
+relation on $S$.
+
+
+
+\item Let $R_3$ be the relation from previous question. What are the sets in the partition of the set of all bit strings
+arising from the relation $R_3$ on the set of all bit strings? 
+
+
+\item Each bead on a bracelet with three beads is either red,
+white, or blue. Define the relation $\mathbb{R}$ between bracelets as: $(B_1,B2)$,
+where $B_1$ and $B_2$ are bracelets, belongs to $\mathbb{R}$ if and only
+if $B_2$ can be obtained from $B_1$ by rotating it or rotating it
+and then reflecting it.
+\begin{enumerate}
+\item Show that R is an equivalence relation.
+\item What are the equivalence classes of $\mathbb{R}$?
+\end{enumerate}
+
+\item How many equivalence relations are there over the set A = (a, b, c)?
+
+
+\item Given the partition P = {{1, 2}, {3}, {4, 5}} of the set A = {1, 2, 3, 4, 5},
+consider R the associated equivalence relation on A. Draw the digraph
+associated to R and write down the matrix M(R).
+
+\item  Prove that if R is a relation and S ⊆ R, then S is a relation.
+
+\item  If R is a reflexive relation on S, then so is any superset of R inside S × S.
+
+\item The following problems pertain to the relationship of congruence mod n, defined on Z as follows:
+DEFINITION: Let a and b be integers and let n be a positive integer. Then a ≡n b iff n | (a − b).
+Show that 2 | (x−y) iff x and y have the same parity; i.e., either both x and y are even or both are odd.
+
+\item Determine whether the following relations are reflexive, symmetric, or transitive. Prove your claims.
+ D = {(x, x) : x ∈ S}, the diagonal of S × S, where S is any set. 
+%--------------------------------------------------------------------------
+\end{enumerate}
+
+
+
+
+\end{document}

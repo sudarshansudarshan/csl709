@@ -1,0 +1,198 @@
+\documentclass{article}
+\title{CSL105 : Discrete Mathematics\\
+\large{Minor Examination}\\
+\large{Indian Institute of Technology Ropar}\\
+\small{Instructor: Dr. Sudarshan Iyengar}
+}
+\date{February 28, 2017}
+\usepackage{amsmath}
+\begin{document}
+\maketitle
+Total Duration : 2 hours \hfill Total Marks : 80 M\\
+
+\underline{\large{Section I \hspace*{7cm} [5 Marks each]}}
+\begin{enumerate} 
+    \item Let $S=\{1,2,3,\dots\}$. Consider a relation $R=\{(a,b)|a+b\leq 10\}$. Prove or disprove that $R$ satisfies reflexive, symmetric, antisymmetric and transitive properties.\\
+    
+Solution: \\
+\begin{enumerate}
+\item $R$ cannot be reflexive since $\forall a \in S \ni' a \geq 6, (a,a) \notin R$
+\item R is symmetric since $a+b = b+a$ and hence $\forall (a,b) \in R$, we can say that $(b,a) \in R$
+\item R is not antisymmetric since $(8,2) \in R$ and $(2,8) \in R$ but $2 \neq 8$. 
+\item R is not transitive since, $(3,2) \in R$ and $(2,8) \in R$ but $(3,8) \notin R$ since $3+8 \geq 10$. 
+\end{enumerate}
+\begin{center}
+- - - X - - -
+\end{center}
+
+    \item In the matrix representation of a relation, how does one find if the relation is transitive or not? Prove that your method works. \\ 
+Solution: \\
+Let $R$ be transitive and $M$ denote the matrix representing $R$.\\
+For $R$ to be transitive, we know that $M^2 \leq M$\\
+
+Let $M^2_{xy}$ be the the $x^{th}$ row $y^{th}$ column entry of $M^2$.\\ 
+If $M^2_{xy} =1$ then there must exist at least one $y \in A \ni' M_{xy} = M_{yz} = 1$. This happens only if $xRy$ and $yRz$ guaranteeing that R is transitive.   
+
+\begin{center}
+- - - X - - -
+\end{center}
+    
+    \item Every sequence of $n^2 + 1$ distinct real numbers contains a subsequence of length $n + 1$ that is either strictly increasing or strictly decreasing.\\
+    
+    Solution: \\
+    
+Let $a_1, a_2, \dots a_{n^2+1}$ be the sequence of $n^2+1$ distinct real numbers. \\
+For $1 \leq k \leq n^2+1$, let $x_k$ denote the maximum length of  a decreasing subsequence that ends with $a_k$ and $y_k$ denote the maximum length of  a increasing subsequence that ends with $a_k$.\\ 
+	If there is no decreasing or increasing subsequence of length $n+1$, then $1 \leq x_k \leq n$ and $1 \leq y_k \leq n$ for all values of $k$.  Consequently, there are at most $n^2$ distinct ordered pairs $(x_k,y_k)$. However we have a sequence of $n^2 +1$ ordered pairs associated with each term $a_k$ in the sequence. So, by pigeonhole principle, we have two identical ordered pairs $(x_i,y_i) , (x_j,y_j)$, where $i\neq j$. Since terms in the sequence are distinct, we arrive at a contradiction - either $a_i < a_j$ then $x_i > x_j$ or  $a_i > a_j$ then $y_i < y_j$.  	
+
+\begin{center}
+- - - X - - -
+\end{center}
+    
+    \item State well ordering principle. State and Prove Mathematical Induction.\\
+    Solution : \\
+    The well-ordering principle states that every non-empty subset of positive integers contains a least element. \\
+
+The principle of Mathematical induction states that:\\
+Let $S(n)$ denote an open mathematical statement that involves one or more occurrences of the variable $n$, which represents a positive integer:
+\begin{enumerate}
+\item If $S(n)$ is true; and
+\item If whenever $S(k)$ is true then $S(k+1)$ is true;
+\end{enumerate}
+then $S(n)$ is true for all $n \in Z^+$ \\
+
+The proof of the above is as stated:\\
+Let $S(n)$ be such an open statement satisfying (a), (b), and let $F=\{ t \in Z^+|S(t)\ is \ false \}$. 
+We wish to prove that $F= \phi$, so to obtain a contradiction we assume $F \neq \phi$. By well ordering principle $F$ has a least element $m$. With $m-1 \notin F$, we have $S(m-1) = true$. So by condition (b) we have that $S(m-1)+1) = S(m) = true$, contradicting that $m \in F$. 
+
+
+ \begin{center}
+- - - X - - -
+\end{center}
+    
+    \item What is the condition for a function to be invertible? Explain with an example. \\
+    
+    Solution: \\ 
+    For a function $f$ to be invertible, it must be both one-one and onto.\\
+    
+    Let $f:A \rightarrow B$ be not onto. Then $\exists\  y \in B \ni' y$ does not have a pre-image. That is, $\forall x \in A, f(x) \neq y$. Therefore $f^{-1}(y)$ does not exist. \\ 
+    Similarly, if $f$ is not one-one, $\exists\  y \in B \ni' f(x_1)=f(x_2)=y$, for some $x_1,x_2 \in A$. Again in this case, $f^{-1}(y)$ does not exist.
+   
+   
+   
+\begin{center}
+- - - X - - -
+\end{center}
+    
+    \item Six boxes are coloured red, black, blue, yellow, orange and green. In how man ways can you
+put 20 identical balls into these boxes such that no box is empty?\\
+Solution: \\
+This can be done in ${(20-6) + 6 - 1 }\choose 5$ ways. \\
+This is the same as the problem of having combinations with repetitions. Since no box is to be empty we have in total $(20-6)$ balls left after placing 1 ball in each box. 
+ \begin{center}
+- - - X - - -
+\end{center}
+
+    \item Prove that if R is a reflexive relation on set S, then so is any superset of R inside S $\times$ S.\\
+    Solution: \\
+    
+    Since $R$ is already reflexive, $\forall a \in S, (a,a) \in R$. Hence a superset of $R$ will continue to  have the existing elements. Hence $R$ continues to be reflexive. 
+\begin{center}
+- - - X - - -
+\end{center}
+    
+    \item Let $G = (V, E)$ be a loop free undirected graph. Prove that if G contains no cycle of odd
+length then G is bipartite.\\
+Solution: 
+
+Suppose $G$ has no odd cycles.\\
+Choose any vertex $v \in G$.\\
+
+Divide $G$ into two sets of vertices like this:\\
+Let $A$ be the set of vertices such that the shortest path from each element of $A$ to $v$ is of odd length;\\
+Let $B$ be the set of vertices such that the shortest path from each element of $B$ to $v$ is of even length. \\
+WLOG, let $v \in B$ and $A\cap B=\phi$.\\
+
+Suppose $a_1,a_2 \in A$ are adjacent. Then there would be a closed walk of odd length cycle $(v,\dots,a_1,a_2,\dots,v)$.\\
+This contradicts our initial supposition that $G$ contains no odd cycles.\\
+So no two vertices in $A$ can be adjacent.\\
+By the same argument, neither can any two vertices in $B$ be adjacent.\\
+Thus $A$ and $B$ satisfy the conditions for $G=(A \cup B,E)$ to be bipartite. 
+\begin{center}
+- - - X - - -
+\end{center}
+
+\end{enumerate}
+
+\underline{\large{Section II \hspace*{7cm} [10 Marks each]}}
+\begin{enumerate} 
+ \item Prove by Induction that $1+\frac{1}{2}+\frac{1}{3}+\dots=\infty$.
+ \newline
+Solution: \\
+We see that the series is sum of Harmonic numbers\\
+Let $H_{j}$ be the series $1+\frac{1}{2}+\frac{1}{3}+\dots+ \frac{1}{j}$\\
+Now we prove that :\\
+$H_{2^n} \geq 1 + \frac{n}{2}$\\
+BASIS STEP: $P(0)$ is true, because $H_{2^0} = H_1 = 1 ≥ 1 + \frac{0}{2}$ \\
+INDUCTIVE STEP: The inductive hypothesis is the statement that $P(k)$ is true, that is,\\
+$H_{2^k} \geq 1 + \frac{k}{2}$ \\
+where $k$ is an arbitrary non-negative integer. We must show that if $P(k)$ is true, then $P(k + 1)$, which states that $H_{2^{k+1}} \geq 1 + \frac{k+1}{2}$, is also true.\\
+So, assuming the inductive hypothesis, it follows that:
+\begin{align*}
+H_{2^{k+1}} &=  1+\frac{1}{2}+\frac{1}{3}+\dots + \frac{1}{2^k}+  \frac{1}{2^k +1} \dots \frac{1}{2^{k+1}}\\
+&= H_{2^k} + \frac{1}{2^k +1} \dots \frac{1}{2^{k+1}}\\
+&\geq \left( 1+ \frac{k}{2}\right) +  \frac{1}{2^k +1} \dots \frac{1}{2^{k+1}}\\
+& \geq \left( 1+ \frac{k}{2}\right) + 2^k.\frac{1}{2^{k+1}}\\
+& \geq \left( 1+ \frac{k}{2}\right) + \frac{1}{2}\\
+& = 1 + \frac{k+1}{2}
+\end{align*}
+Since we see that $H_{2^n}$ is diverging, we can see that  $1+\frac{1}{2}+\frac{1}{3}+\dots=\infty$. 
+
+
+
+
+\begin{center}
+- - - X - - -
+\end{center}
+ 
+ \item Show that $$1.2.3+2.3.4+3.4.5+\dots +n(n+1)(n+2)= \frac{n(n+1)(n+2)(n+3)}{4}$$. \\
+ Solution : \\
+ 
+ Proof by induction : \\
+ $S(1) = 1.2.3 = \frac{1.2.3.4}{4}$, according to the closed form given. Hence, we can conclude $S(1)$ is true. \\
+ 
+ Induction Hypothesis: Let the given statement be true up to some $k \ni' 1.2.3 + 2.3.4 \dots k(k+1)(k+2) = \frac{k(k+1)(k+2)(k+3)}{4}$\\
+ 
+ Now, we need to prove that  $S(k+1)$ is true.\\
+ Consider $1.2.3 + 2.3.4 \dots k(k+1)(k+2) + (k+1)(k+2)(k+3)$
+ \begin{align*}
+ &= \frac{k(k+1)(k+2)(k+3)}{4} + (k+1)(k+2)(k+3)\\
+ &= (k+1)(k+2)(k+3)\left(\frac{k}{4} +1\right)\\
+ &=  \frac{(k+1)(k+2)(k+3)(k+4)}{4}
+ \end{align*}
+Hence Proved.\\ 
+ 
+ 
+ \begin{center}
+- - - X - - -
+\end{center}
+ 
+ \item You need to choose a password which is at least 6 characters and at most 8 characters in length with an added condition that each character is an uppercase letter or a digit. Also, your password must contain at least one digit. In how many ways can you choose your password?\\ 
+ Solution: \\
+ $(36^6 - 26^6) + (36^7 - 26^7) +(36^8 - 26^8) $
+ 
+\begin{center}
+- - - X - - -
+\end{center}
+ \item Enumerate all possible non-isomorphic graphs on 4 vertices. \\ 
+ Solution : \\ 
+ 0 edges: 1 unique graph.\\
+1 edge: 1 unique graph.\\ 
+2 edges: 2 unique graphs: one where the two edges are incident and the other where they are not incident. \\ 
+3 edges: 3 unique graphs. One is a 3 cycle with an isolated vertex, and the other two are trees: one has a vertex with degree 3 and the other has 2 vertices with degree 2.\\ 
+4 edges: 2 unique graphs: a 4 cycle and one containing a 3 cycle.\\ 
+5 edges: 1 unique graph.\\ 
+6 edges: 1 unique graph.
+
+\end{enumerate}
+\end{document}

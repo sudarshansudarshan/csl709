@@ -1,0 +1,128 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newdate{date}{17}{02}{2017}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsfonts}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Assignment 3}
+\author{Deadline}
+\date{\displaydate{date}}
+\begin{document}
+\maketitle
+
+%---------------------------------------------------------------------------
+
+
+\begin{enumerate}
+\item Which of the following statements is/are TRUE for undirected graphs?
+P: Number of odd degree vertices is even.
+Q: Sum of degrees of all vertices is even. 
+
+
+\item Let G be a complete undirected graph on 6 vertices. If vertices of G are labeled, then the number of distinct cycles of length 4 in G is equal to........  
+
+\item Simple graphs with V = n, Prove that there are 
+\begin{math}
+2^ {n \choose 2}
+\end {math} such simple graphs exists.
+
+\item Can we have a graph Q with degree sequence (1, 2, 2, 3, 3, 5), loops and parallel edges allowed?
+
+\item A graph G = (V, E) is called bipartite if V can be partitioned into two sets C
+and S such that each edge has one vertex in C and one vertex in S. As a specific
+example, let C be the set of courses at the university and S the set of students.
+Let V = C ∪ S and let {s, c} ∈ E if and only if student s is enrolled in course c.
+(a) Prove that G = (V, E) is a simple graph.
+(b) Prove that every cycle of G has an even number of edges.
+
+\item What is the maximum number of edges in a bipartite planar graph with n vertices?
+
+\item Can a simple graph have 5 vertices and 12 edges? If so, draw it; if not, explain
+why it is not possible to have such a graph. 
+
+\item How many more edges are there in the complete graph $K_7$ than in the complete
+graph $K_5$?
+
+\item For a graph G = (V, E), we define the complement $G' =
+(V, E')$, where $e \in E'$ if and only if $e \notin E$. Let G be a graph with n
+vertices, and let A be its adjacency matrix. Write down the adjacency
+matrix A of its complement in terms of A and $M_n$, where $M_n$ is the
+adjacency matrix of the complete graph $K_n$.
+
+\item Give an example of a connected graph $G$ where removing any edge of $G$ results in a disconnected graph. Can we determine the number of edges it has?
+
+\item If you construct a graph that captures a relation, describe the properties of a graph representing an equivalence relation.
+
+\item Consider all the possible graphs on $n$ vertices. What can you say about the number of graphs that are connected and those which are disconnected. What fraction of graphs are more in number?
+
+\item We say that G is self-complementary if G is isomorphic to
+G. Let $G$ be a cycle on  $n$ vertices. Prove that $G$ is self complementary if $n=5$. Prove that if G is self-complementary, then n ≡ 0 or 1 (mod 4).
+
+\item If there are 15 people in a party, is it possible for each of these people to shake hands with exactly three others?
+
+\item Let $G=(V,E)$ be a loop free undirected graph. Prove that if $G$ contains no cycle of odd length than $G$ is bipartite. 
+
+\item Let $G(V,E)$ be a loop free undirected $n$-regular graph with 
+$|V| \leq 2n +2$. Prove that $\overline{G}$ has a Hamilton cycle. 
+
+
+\item Suppose that someone starts a chain letter. Each person who receives the letter is asked to send
+it on to four other people. Some people do this, but others do not send any letters. How many
+people have seen the letter, including the first person, if no one receives more than one letter
+and if the chain letter ends after there have been 100 people who read it but did not send it out?
+How many people sent out the letter?
+
+
+\item The eccentricity of a vertex in an unrooted tree is the length
+of the longest simple path beginning at this vertex. A vertex is
+called a center if no vertex in the tree has smaller eccentricity
+than this vertex. Show that a tree has either one center or two centers that
+are adjacent. 
+
+\item A chessboard has the form of a cross, obtained from a $4 \times 4$ chessboard by deleting the corner squares. Can a knight travel around this
+board, pass through each square exactly once, and end on the same square he
+starts on?
+
+\item  Can 9 line segments be drawn in the plane, each of which intersects
+exactly 3 others?
+
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\title{Assignment 7\\ Solutions of Generating Functions}
+\date{}
+\begin{document}
+\maketitle
+\begin{enumerate}
+
+\item  $c_1+c_2+c_3+ c_4=20$  where  $-3\leq  c_1, c_2,   -5\leq c_3\leq 5 ,0\leq c_4$\\
+$(3+c_1)+(3+c_2)+(5+c_3)+c_4$ = 31\\
+By replacing the variables  
+ now the problem turns into $x_1+x_2+x_3+x_4=31 $ where $0\leq x_1,x_2,x_4; 0\leq x_3\leq 10$ \\
+Hence the answer is the 	coefficient of $ x^{31} $ in the generating function :\\ 
+$(1+x+x^2 \dots)^3(1+x+ x^2........+x^{10}).$
+
+
+\item Using the idea of generating functions we have :
+\begin{enumerate}
+
+\item we would have $ (x^3+x^4+.........)^4 $ but we can take $  x^{12} $as a common factor so we have $ (x^3+x^4+.........)^4=  x^{12}(1+x+x^2+........)^4$.\\ 
+We also know that $ \frac{1}{1-x} = (1+x+x^2+......)$ and so $\frac{1}{(1-x)^4} = (1+x+x^2+.......)^4 $
+and so we have $x^{12}(1+x + x^2 + ........)^4 = x^{12}(1-x)^{-4}$. 
+Now want to find the coefficient of $x^{12}$ in $(1−x)^{−4}$ which is ${-4 \choose 12}(-1)^{12} = (-1)^{12} {4 + 12 -1 \choose 12} = {15 \choose 12}$ 
+
+\item In a similar way, we need to find the coefficient of $x^{12}$ in $(1 + x + x^2 + .... + x^6)^4$.
+\end{enumerate}
+
+\item Consider each package of 25 envelopes as one unit. Then the answer is the
+	coefficient of 
+	$x^{120}$ in  $(x^6 + x^7+ \dots + x^{39} + x^{40})^4 = x^{24}(1 + x +\dots + x^{34})^4$,  which 
+	is the same as the coefficient of $x^{96}$ in
+	$(\frac{1-x^{35}}{1-x})^4$
+	
+\item There is a one-one correspondence between the possible subsets and the solutions of the equation $ c_1+c_2+c_3+ \dots c_8=49$, where $c_1,c_8 \geq 0, c_i \geq 0 ~ \forall~ 2 \leq i \leq 7$. \\
+The number of these solutions is the coefficient of $x^{49}$ in the generating function : \\
+$(1+x+x^2 \dots)(x^2+x^3+ \dots)^6(1+x+x^2 \dots) = x^{12}/(1+x)^8$. \\
+This can be seen as the coefficient of $x^37$ in $(1-x)^{-8}$ which is equal to $44 \choose 37$.
+
+%There are 50 integers if we take consecutive integers then there are (43+1)! possibility. so, the possibility that the integers are non consecutive is 50!-44!
+
+\item The number of partitions of 6 into 1's 2's and 3's is 7. 
+
+\item Let $a(x)$ be the generating function for number of partitions of $n$ where no summand appears more than twice and $b(x)$ be the generating function for number of partitions of $n$ where no
+summand is divisible by 3. It suffices to show that $a(x)$ and $b(x)$ are the same.\\
+ Observe that the generating function for $a(n)$ is given by \\
+  $a(x) = (1+x+x^2)(1+x^2+x^4)(1+x^3+x^6)\dots ~=~ \frac{1-x^3}{1-x}.\frac{1-x^6}{1-x^2}.\frac{1-x^9}{1-x^3}\dots ~=~b(x)$ where,\\
+  $b(x)= \frac{1}{1-x}.\frac{1}{1-x^2}.\frac{1}{1-x^3}. \dots$
+ 
+ 
+ %is $\prod (1+q^n+q^{2n})$ which is the generating function for b(n)$ \frac{1}{\prod(1-q^{3n-1})(1-q^{3n-2})}$ .
+
+\item Let $f(x)$ be the generating function for number of partitions of $n$ where no summand is divisible by 4 and $g(x)$ be the generating function for number of partitions of $n$ where no even 
+summand is repeated. It suffices to show that $f(x)$ and $g(x)$ are the same.\\
+ $f(x)= \frac{1}{1-x}.\frac{1}{1-x^2}.\frac{1}{1-x^3}. \dots$\\
+ $g(x)= \frac{1}{1-x}.(1+x^2).\frac{1}{1-x^3}.(1+x^4).\frac{1}{1-x^5}.(1+x^6) \dots$\\
+ $= \frac{1}{1-x}.\frac{1-x^4}{1-x^2}.\frac{1}{1-x^3}.\frac{1-x^6}{1-x^4}.\frac{1}{1-x^5}.\frac{1-x^{12}}{1-x^{6}} \dots $\\ 
+ $=\frac{1}{1-x}.\frac{1}{1-x^2}.\frac{1}{1-x^3}. \dots = f(x) $
+ 
+%The generating function for partitioning nn into non necessarily distinct odd summands is $ Q(x) = (1+x+x^{2}+\cdots)(1+x^{3}+x^{6}+\cdots)(1+x^{5}+x^{10}+\cdots)\cdots$ To make this distinct, we note that if we were to restrict each parenthetical polynomial in the product to just its first two terms, we would restrict the corresponding sequence in anan to entries of just 0 or 1, hence limiting each partition to distinct integers. Thus, the generating function N(x) is: 
+%$ N(x) = (1 + x)(1 + x^3)(1 + x^5)\cdots$
+
+\item We can consider the Ferrers graph with summands (rows) not exceeding $m$. Now when we consider the transpose, we obtain yet another Ferrers graph that has $m$ summands (rows). The result follows from the one-one correspondence of the between these graphs. 
+
+\item the exponential of the sequence 0!,1!,2!.............. is given by
+\begin {math} \frac{0!}{0!}   x^{0}+\frac{1!}{1!}   x^{1}+\frac{2!}{2!}   x^{2}......... 
+ \\=1+  x^1+  x^2+  x^3............. = \frac{1}{1-x}
+\end {math}
+
+\end{enumerate}
+\end{document}

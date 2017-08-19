@@ -1,0 +1,184 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\usepackage{float}
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{comment}
+\newcommand*{\xdash}[1][3em]{\rule[0.5ex]{#1}{0.55pt}}
+
+
+\title{Solutions to Test 2}
+\author{}
+
+\begin{document}
+\maketitle
+
+
+\begin{enumerate}
+    \item \textbf{In how many ways can the 26 letters of the alphabet be permuted so that none of the patterns man, log or site occurs.     (10 marks)}\\
+
+\textbf{Answer:}\\
+Total number of permutations possible with 26 alphabets, N = 26!\\
+
+Total number of permutations possible with 26 alphabets where `man' occurs always, N(A) = (26 - 3 + 1)! = 24!\\
+Similarly, for `log', N(B) = (26 - 3 + 1)! = 24!,\\
+For `site', N(C) = (26 - 4 + 1)! = 23!\\
+
+Total number of permutations possible with 26 alphabets where `man' and `log' occur always, N(AB) = (26 - 3 - 3 + 2)! = 22!\\
+Similarly, for `man' and `site', N(AC) =  (26 - 3 - 4 + 2) = 21! \\
+For `log' and `site', N(BC) = (26 - 3 - 4 + 2) = 21!\\
+
+Total number of permutations possible with 26 alphabets where `man', `log' and `site' occur always, N(ABC) = (26 - 3 - 3 - 4 + 3)! = 19!\\
+
+Now we can apply the principle of Inclusion and Exclusion to calculate the number of possible permutations where none of the given pattern occur.\\
+
+The required number of permutations = N - [N(A) + N(B) + N(C)] + [N(AB) + N(AC) + N(BC)] - [N(ABC)]\\
+
+= 26! - (24! + 24! + 23!) + (22! + 21! + 21!) - 19!
+
+
+    \item \textbf{Define the following with an example each: Euler Trail, Hamilton Path, Isomorphic graphs.    (10 marks)}\\
+
+\textbf{Answer:}    \\
+\begin{enumerate}
+\item \textbf{An Euler trail} is a trail in a graph which visits every edge exactly once.\\
+Not every graph has an Euler trail. A graph contains an Euler trail if all its vertices have even degree or exactly two vertices have odd degree, which will be the start and the end vertices of the trail. For example, in Fig. 1, there is no Euler Trail, whereas ADBFEAFDEB is a trail in Fig. 2.
+\begin{figure}[H]
+\centering
+\includegraphics[scale= 0.35]{euler_trail}
+\end{figure}
+
+\item \textbf{Hamilton Path} in a graph is a path that visits each vertex exactly once. For example, afedcb is a Ham Path in Fig. 3
+\begin{figure}[H]
+\centering
+\includegraphics[scale= 0.45]{ham_path}
+\caption*{Fig. 3}
+\end{figure}
+
+
+\item \textbf{Isomorphic Graphs: } Two graphs $G_1$ and $G_2$ are said to be isomorphic if there exists a function $f$ from vertices of $G_1$ to vertices of $G_2$, i.e. [f: V(G1) ⇒ V(G2)], such that\\
+\begin{enumerate}
+\item $f$ is a bijection (both one-one and onto)
+\item $f$ preserves adjacency of vertices, i.e., if the edge ${U, V} \in G1$, then the edge ${f(U), f(V)} \in G_2$
+\end{enumerate}    
+As an example, graphs $G$ and $G'$ in Fig. 4 are isomorphic, given the bijection $\{v_1 \rightarrow v_1', v_2 \rightarrow v_2', v_3 \rightarrow v_3', v_4 \rightarrow v_4', v_5 \rightarrow v_5'\}$
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale= 0.45]{isomorphic}
+\caption*{Fig. 4}
+\end{figure}
+
+\end{enumerate}
+    \item \textbf{State and prove the absorption law using truth tables (10 marks)}
+    
+\textbf{Answer:}\\
+Absorption Law is the following:\\
+$p \lor (p \land q) = p$\\
+
+\textit{Proof by truth table:}
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+$p$ & $q$ & $(p \lor q)$ & $p \lor (p \land q)$\\
+\hline
+0 & 0 & 0 & 0\\
+\hline
+0 & 1 & 0 & 0\\
+\hline
+1 & 0 & 0 & 1\\
+\hline
+1 & 1 & 1 & 1\\
+\hline
+\end{tabular}
+
+    \item \textbf{Consider the following argument. If the argument is valid, identify the rule of inference that establishes its validity. If not, indicate what is the logical error: ``If Raj's computer program is correct, then he'll be able to complete his computer science assignment in at most two hours. It takes Raj over two hours to complete his computer science assignment. Therefore Raj's computer program is incorrect''. (10 marks)\\}
+
+    \textbf{Answer:}\\
+    Let $p$ = Raj's computer program is correct\\
+    and $q$ = Raj will be able to complete his computer science assignment in less than two hours\\
+     
+    Now, it is given that $p \rightarrow q$.\\
+    Further, it is given that Raj takes more than two hours to complete the assignment, i.e. $q$ is False, i.e. $\neg q$ is True. \\
+   
+    By \textbf{Rule of contraposition}, we know that $a \rightarrow b$ and $\neg b \rightarrow \neg a$ are different ways of expressing the same thing. Therefore, we have $\neg q \rightarrow \neg p$. Since it is given that $\neg b$ is true, we get $\neg p$ is true, i.e $p$ is false.
+    
+    i.e. Raj's computer program is incorrect
+    
+    \item \textbf{Show that the Peterson's graph is non-planar. Prove every single statement without assuming anything.(20 marks)\\}
+
+    \textbf{Answer:}\\
+     For Petersen graph, we have, $v$ = 10 and $e$ = 15. Inspecting the graph, we see that 
+
+\begin{itemize}
+\item Each edge is included in exactly two faces, and 
+\item Each cycle has a length of 5 or greater. 
+\end{itemize}
+Combining these two facts yields $5r\le2e$.\\
+Putting $e=15$, we get, $r\le6$
+
+Now, substituting the values of $v$ and $e$ into Euler's formula $v-e+r=2$, we get $r$=7. 
+
+Both the observations lead to a contradiction. Hence Petersen graph is non-planar.
+
+    \item \textbf{Find the number of ways to arrange the letters in LAPTOP so that none of the letters L, A, T, O is in its original position and the letter P is not in the third or sixth position. (20 marks)}\\
+  
+    \textbf{Answer:}\\
+    Let us first consider the two P's in LAPTOP as two different characters, i.e. the characters are $L$, $A$, $P_1$, $T$, $O$, $P_2$ . Let $d_6$ denote the number of derangements of these six letters.
+
+However, it is also required that P should not be in the third or sixth position. In the above $d_6$ derangements, $P_1$ will not be in third position, but $P_2$ may be. Similarly, $P_2$ will not be in sixth position, but $P_1$ may be. Therefore, we need to remove such cases.
+
+Number of derangements where $P_2$ is in third position (but $P_1$ is not in sixth position) = $d_5$
+Number of derangements where $P_1$ is in sixth position (but $P_2$ is not in third position) = $d_5$
+Number of derangements where $P_2$ is in third position and $P_1$ is in sixth position = $d_4$
+
+Therefore, the total number of derangements of the characters $L$, $A$, $P_1$, $T$, $O$, $P_2$ with the given conditions are $d_6 - 2.d_5 - d_4$.
+However, we are interested in knowing the number of derangements of the characters in LAPTOP, where the arrangements like $P_1 L A P_2 T O$ and $P_2 L A P_1 T O$ will be considered similar. Hence we will divide the outcome of $L$, $A$, $P_1$, $T$, $O$, $P_2$ by two to get the outcome for $L$, $A$, $P$, $T$, $O$, $P$, i.e. (1/2)($d_6 - 2d_5 - d_4$).    
+
+Approximated values of $d_6$, $d_5$ and $d_4$ are 265, 44 and 9 respectively as per the formula $d_n = n!/e$. Therefore, the answer is : (1/2)(265-2(44)-9) = 168/2 = 84.\\
+
+\textbf{Alternate Answer (By using only principle of Inclusion and Exclusion):}\\
+Total Number of arrangements for characters in LAPTOP (N) = 6!/2!\\
+
+Total Number of arrangements where L is in its original position (N(A)) = 5!/2!\\
+Total Number of arrangements where A is in its original position (N(B)) = 5!/2!\\
+Total Number of arrangements where T is in its original position (N(C)) = 5!/2!\\
+Total Number of arrangements where O is in its original position (N(D)) = 5!/2!\\
+Total Number of arrangements where P is in 3rd or 6th position (N(E)) = 5! + 5! -4!\\
+
+Taking two of the above conditions at a time, total cases are = $4 \choose 2$(4!/2!) + 4(4! + 4! - 3!)\\
+
+Similarly, Taking three of the above conditions at a time, total cases are = $4 \choose 3)$ (3!/2!) + $4 \choose 2$(3! + 3! - 2!) \\
+
+Similarly, Taking four of the above conditions at a time, total cases are = 1 + $4 \choose 3$(2! + 2! -1)\\
+
+Similarly, Taking five of the above conditions at a time, total cases are = 1 \\
+
+Solution = 6!/2! - 
+[4(5!/2!) + 5! + 5! - 4!] + 
+[$4 \choose 2$(4!/2!) + 4(4! + 4! - 3!)] -
+[$4 \choose 3$ (3!/2!) + $4 \choose 2$(3! + 3! - 2!)]  + 
+[1 + $4 \choose 3$(2! + 2! -1)] -
+1
+
+= 360 - 456 + 240 - 72 + 13 -1 = 84
+  
+\end{enumerate}
+
+
+\end{document}

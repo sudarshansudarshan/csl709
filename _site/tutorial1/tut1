@@ -1,0 +1,107 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newdate{date}{06}{01}{2017}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Tutorial 1}
+\date{\displaydate{date}}
+\begin{document}
+\maketitle
+\section{Counting Problems}
+\begin{enumerate}
+\item What is the value of $k$ after the following code snippet is executed :
+\begin{enumerate}[label=(\alph*)]
+\item 
+k=0\\
+for $i_1$ = $n_1$\\
+\tab for $i_2$ = $n_2$\\
+\tab \tab for $i_3$ = $n_3$\\
+\tab \tab \tab \vdots\\
+\tab \tab \tab for $i_m$ = $n_m$\\
+\tab \tab \tab \tab k=k+1
+
+\item 
+k=0\\
+for $i_1$ = $n_1$\\
+\tab k=k+1\\
+\tab for $i_2$ = $n_2$\\
+\tab \tab k=k+1\\
+\tab \tab for $i_3$ = $n_3$\\
+\tab \tab \tab k=k+1\\
+\tab \tab \tab \vdots\\
+\tab \tab \tab for $i_m$ = $n_m$\\
+\tab \tab \tab \tab k=k+1\\ 
+\end{enumerate}
+
+\item In how many ways can 10 men and 10 women be seated in a row if:
+\begin{enumerate}[label=(\alph*)]
+\item Any person can sit next to any other.
+\item Men and women occupy alternate seat.
+\item Husband and wife sit together.
+\end{enumerate}
+
+\item A committee of 8 has to be chosen out of 16 men and 10 women. In how many ways can this be done if:
+\begin{enumerate}[label=(\alph*)]
+\item No restrictions.
+\item The committee must include equal men and women.
+\item The committee must include 7 women
+\item The committee must include more women than men.
+\item The committee must include at least 6 men.
+\end{enumerate}
+
+\item Compute the value of the following:
+\begin{enumerate}[label=(\alph*)]
+\item ${n \choose 0} + {n \choose 1} + {n \choose 2} + \dots + {n \choose n}$ 
+\item ${n \choose 0} - {n \choose 1} + {n \choose 2} - \dots + (-1)^n {n \choose n}$
+\end{enumerate}
+\end{enumerate}
+
+\section{Permutations with Repetitions}
+\begin{enumerate}
+\item Amit, Nihal, Shrikanth, Rohan, Neelam and Rashmi have a Giani's free ice-cream coupon each, in which they can avail the following flavors : Chocolate, Vanilla, Strawberry, Butterscotch. In how many ways can they buy ice-creams? Is it the same as the number of ways in which the vendor at Giani can sell them 6 ice-creams? Justify your answer.
+
+\item There are three bins, each containing red, green, and blue balls respectively. How many arrangements of 5 balls can be made if each bin has unlimited supply of balls?
+
+\item In how many ways can 5 people A, B, C, D, E be arranged on a circular table, such that:
+\begin{enumerate}[label=(\alph*)]
+\item A and B are always seated together.
+\item C and D never sit together.
+\end{enumerate}
+
+\item What is the number of subsets of a set with $n$ elements?
+
+\item What is the number of solutions to:
+\begin{equation}
+x_1 + x_2 + x_3 + x_4 = 7 , \textnormal{where} x_i \geq 0 \textnormal{and} \forall i 1 \leq i \leq 4
+\end{equation}
+
+\item Count the number of ways in which 3 men and 3 women can be seated in a round table such that no two men sit together.
+
+\item What would the coefficient of:
+\begin{enumerate}[label=(\alph*)]
+\item $x^5y^2$ be in the expansion of $(x+y)^7$?
+\item $a^5b^2$ be in the expansion of $(2a-3b)^7$?
+\end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}

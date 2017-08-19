@@ -1,0 +1,104 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\definecolor{indigo}{RGB}{75,0,130}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem} 
+\usepackage{amsfonts} 
+
+\title{CSL105 : Discrete Mathematics\\
+\large{Major Examination}\\
+\large{Indian Institute of Technology Ropar}\\
+\small{Instructor: Dr. Sudarshan Iyengar}
+}
+\date{April 2017}
+\begin{document}
+\maketitle
+Total Duration : 3 hours \hfill Total Marks : 100 M\\
+
+\underline{\large{Section I \hspace*{10cm} [5 Marks each]}}
+\begin{enumerate} 
+
+
+
+
+
+
+\item What are the total number of passwords with at least 6 digits and at most 8 digits, with a condition that there must at least be one capital letter and one numeral. Prove your answer.
+
+\item Show that for every bijective function $f$, there exists an inverse.
+
+\item Establish the validity of the following and provide reasons :
+  \begin{align*}
+			\neg p \lor s\\
+			\neg t \lor (s \land r )\\
+			\neg q \lor r\\
+			p\lor q \lor t\\
+			----\\
+			r\lor s\\
+			----
+		\end{align*}
+ 
+ \item Show that for $m \geq 3$,  $s(m,m-2) = \frac{1}{24}m(m-1)(m-2)(3m-1)$,
+	 where $s(m,n)$ denotes the Stirling's number of the first kind. \textcolor{red}{I realised students may not know or remember what is the S's number of the first kind. In place of this question, please include a question on Ackerman's function which is an exercise problem in section 5.2. Include the definition of $A(m,n)$  and ask them to show that $A(3,n)=2^{n+3}-3$. This is a direct question from the book. Check!. Also, I feel this is best posed as a long question than a short one. Swap this with the question on principle of inclusion and exclusion (q4 in sec 2)}
+ %(Give an exercise problem from the text book which is on the stirling's number of the first kind. Note that it is not second kind).
+ 
+ \item A tree has a Hamilton Path iff $\_\_\_\_\_\_\_\_ $. Prove your answer. 
+ 
+  \item Derive the chromatic polynomial of a cycle on 5 vertices? 
+
+
+ \item How do you check the divergence of an infinite sequence using quantifiers? Explain.
+ 
+  \item Six married couples are to be seated at a circular table. In how many ways can they arrange themselves so that no wife sits next to her husband.
+
+\item Show that isomorphism of graphs is an equivalence relation.
+
+\item Find the value of the following. Provide a story proof used in determining the values:
+\begin{equation}
+{n \choose 0} + {n \choose 1} + {n \choose 2} + \dots {n \choose n}
+\end{equation}
+\begin{equation}
+{n \choose 0}^2 + {n \choose 1}^2 + {n \choose 2}^2 + \dots {n \choose n}^2
+\end{equation}
+
+\end{enumerate}
+\vspace*{3cm}
+
+
+\underline{\large{Section II \hspace*{10cm} [10 Marks each]}}
+\begin{enumerate} 
+
+ 
+ \item Show that every connected graph with $n$ vertices has at least $n-1$ edges. Give a rigorous proof.
+
+\item In how many ways can you triangulate a regular polygon having $n+2$ sides?
+
+\item  A pair of dice, one red and other other green, are rolled 6 times. We know that the ordered pairs (1, 1), (1, 5), (2, 4), (3, 6), (4, 2), (4, 4), (5, 1) and (5, 5) did not come up. What is the probability that every value came up on both the red die and the green die?
+
+\item State and prove the \textit{principle of inclusion and exclusion} through induction on $t$:
+\begin{align*}
+\overline{N} = N - \sum_{1\leq i \leq t}N(c_i) + \sum_{1\leq i\leq j\leq t}N(c_ic_j) - \sum_{1\leq i\leq j\leq k\leq t}N(c_ic_jc_k) + \dots + (-1)^tN(c_1c_2c_3\dotsc_t)
+\end{align*}
+
+% \item Determine the generating function for the number of partitions of $n\in \mathbb{Z}^+$, where 1 occurs at most once, 2 occurs at most twice, 3 at most thrice, and in general $k$ occurs at most $k$ times $\forall k \in \mathbb{Z}^+$.
+
+\item How many 20-digit quarternary (0,1,2,3) sequences are there where there is at least one 2 and an odd number of 0s.
+
+
+
+\end{enumerate}
+\end{document}

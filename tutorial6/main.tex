@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\definecolor{indigo}{RGB}{75,0,130}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Tutorial 6 - Graphs and Hamiltonian Cycles}
+\date{17 March 2017}
+\begin{document}
+\maketitle
+We took a look at the following ideas from the text book :
+
+\begin{enumerate}
+    \item \textbf{Cut set} : For a given connected graph, a cut-set is a minimal disconnecting set of edges. We also took a look at a few examples.
+
+	\item \textbf{Hamilton cycle} : If $G = (V, E)$ is a graph or multigraph with $|V| \geq 3$, we say that $G$ has a Hamilton cycle
+if there is a cycle in $G$ that contains every vertex in V.    
+    
+    \item At Professor Alfred's science camp, 17 students have lunch together each day at a circular table. They are trying to get to know one another better, so they make an effort to sit next to
+two different colleagues each afternoon. For how many afternoons can they do this? How can they arrange themselves on these occasions?
+
+	\item Theorem : Let $G = (V, E)$ be a loop-free undirected graph with $|V| = n \geq 3$. If $deg(x) + deg(y) \geq n$
+for all nonadjacent vertices $x,y \in V$, then $G$ contains a Hamilton cycle.
+
+
+\end{enumerate}
+
+
+
+
+\end{document}

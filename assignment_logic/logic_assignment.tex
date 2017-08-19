@@ -1,0 +1,95 @@
+
+
+
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newdate{date}{20}{01}{2017}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsfonts}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Assignment 5}
+%\date{\displaydate{date}}
+
+
+
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+
+
+
+\item  Three professors Puneet, Apurva and Nitin are seated in the cafeteria, the cafe incharge asks them: “Does everyone want coffee?” Puneet says: “I do not know.” Apurva says: “I do not know.” Finally, Nitin says: “No, not everyone wants coffee.” The incharge comes back and gives coffee to the professors who want it. How did the incharge figure out who wanted coffee?
+	
+\item Show by a truth table the equivalence of the two expressions: $(p\rightarrow q)\land (p\rightarrow r)$ and 
+	$p\rightarrow (q \land r) $.
+
+\item Prove Demorgan's law with n variables.
+
+\item When do you say that a logical expression is satisfiable? Give an example of an expression that is neither a tautology nor a contradiction.
+
+
+\item Is $p\rightarrow [q\rightarrow(p\land q)]$ a tautology?
+
+\item Is $(p\lor q)\rightarrow[q\rightarrow (p\land q)]$ a contradiction/tautology/neither?
+
+\item Using rules of inference, show that the following is true: $$[(p\rightarrow q)\land(\neg r \lor s)\land(p\lor r)]\rightarrow (\neg q\rightarrow s).$$ 
+
+\item Write each of the following arguments in symbolic form. Then establish the validity of the argument or give a counter example to show that it is invalid.
+	\begin{enumerate}
+		\item If Reshma gets the supervisor's position and works hard, then she'll get a raise. If she gets the raise, then she'll buy a new car. She has not purchased a new car. Therefore either she did not get the supervisor's position or she did not work hard.
+		\item If Dinesh goes to the racetrack, then Hema will be mad. If Ravi plays cards all night, then Cinderella will be mad. If either Hema or Cinderella go mad, then Veena (their lawyer) will be notified. Veena has not heard from either of these two clients. Consequently, Dinesh didn't make it to the racetrack and Ravi didn't play cards all night.
+	\end{enumerate}
+
+\item Here is a very important expression $$[(p\lor q)\land(\neg p\lor r)]\rightarrow(q\lor r).$$ Show that this is a tautology. This provides the rule of inference known as resolution, where the conclusion $(q\lor r )$ is called the resolvent. This rule was proposed in 1965 by J. A. Robinson and is the basis of many computer programs designed to automate a reasoning system. 
+
+\item Establish the validity of the following arguments, using resolution (along with rules of inference and the laws of logic):
+	\begin{enumerate}
+		\item 
+		$\begin{array}{l}
+			p\lor(q\land r)\\
+			p\rightarrow s\\
+			----\\
+			r\lor s\\
+			----\\
+		\end{array}$\\
+
+	\item $\begin{array}{l}
+			\neg p \lor s\\
+			\neg t \lor (s \land r )\\
+			\neg q \lor r\\
+			p\lor q \lor t\\
+			----\\
+			r\lor s\\
+			----
+		\end{array}$
+	\end{enumerate}
+
+\item Write the following argument in symbolic form, then use resolution (along with the rules of inference and the laws of logic) to establish its validity.\\
+	Jonathan does not have his driver's licence or his new car is out of gas. Jonathan has his driver's license or he does not like to drive his new car. Jonathan's new car is not out of gas or he does not like to drive his new car. Therefore, Jonathan does not like to drive his new car.
+
+\item Consider the quantified statement $\forall x \exists y [x+y=17]$. Determine whether this statement is true or false for each of the following universes: (a) the integers; (b) the positive integers; (c) the integers for x, the positive integers for y; (d) the positive integers for x, the integers for y.
+
+\end{enumerate}
+
+
+\end{document}
+

@@ -1,0 +1,11 @@
+/blueprint.pdf
+/introduction.pdf
+/main.pdf
+/conclusion_abstract_pisi.pdf
+/*.aux
+/*.bbl
+/*.blg
+/*.log
+/*.gz
+/*.fdb_latexmk
+abc.txt

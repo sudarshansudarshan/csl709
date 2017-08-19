@@ -1,0 +1,108 @@
+
+\documentclass[a4paper]{article}
+%Graph theory assignment
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newdate{date}{20}{01}{2017}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage{amsfonts}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Assignment 4}
+%\date{\displaydate{date}}
+
+
+
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+
+
+
+\item If every vertex of a connected graph $G$ has degree 2, then $G$ is a cycle. Give a rigorous proof.  
+
+\item Define a cut-vertex. Let $v$ be a cut vertex of a simple graph $G$. Prove that $\overline{G}-v$  is connected. 
+
+
+\item Show that Peterson's Graph is non-planar.
+
+\item Prove that every graph with at least two vertices contains a pair of distinct 
+vertices of the same degree. Determine whether this also hold for multigraphs, by
+providing a proof or a counterexample.
+
+\item Let $G=(V,E)$ be an undirected graph. Define a relation $R$ on $V$ by $aRb$ if $a=b$ or if there is a path in $G$ from $a$ to $b$. Prove that $R$ is an equivalence relation. Describe the partition of $V$ induced by $R$.
+
+
+\item Let $G=(V,E)$ be a loop-free connected undirected graph. Let $\{a,b\}$ be an edge of $G$. Prove that $\{a,b\}$ is part of a cycle if and only if its removal does not disconnect $G$.
+
+
+
+\item A given graph $G$ has the property that any induced subgraph of this graph is connected. What can one say about such a graph? Explain your answer.
+
+\item Show that a cycle graph is never self complementary unless it is a 5-cycle.
+
+\item If $G$ is an undirected graph with $n$ vertices and $e$ edges, let $\delta = min_{v\in V}\{deg(v)\}$ and let $\Delta=max_{v\in V}\{deg(v)\}$. Prove that $\delta\leq 2(e/n)\leq \Delta$.
+
+\item Let $k$ be a fixed positive integer and let $G=(V,E)$ be a loop-free undirected graph, where $deg(v)\geq k$ for all $v\in V$. Prove that $G$ contains a path of length $k$.
+
+\item What is the maximum length of a trail in $K_{2n}$.
+
+
+\item Carolyn and Richard attended a party with three other married couples. At this party a good deal of handshaking took place, but (1) no one shook hands with her or his spouse; (2) no one shook hands with herself or himself; and (3) no one shook hands with anyone more than once. Before leaving the party, Carolyn asked the other seven people how many hands she or he had shaken. She received a different answer from each of the seven. How many times did Carolyn shake hands at this party? How many times did Richard?
+
+\item Show that when any edge is removed from $K_5$, the resulting subgraph is planar. Is this true for the graph $K_{3,3}$?
+
+\item Show that any subgraph of a bipartite graph is bipartite.
+
+\item Every graph on four vertices is planar. Prove this statement without enumerating all possible graphs on 4 vertices.
+
+\item Show that every subgraph of a planar graph is planar. 
+
+\item Let $G=(V,E)$ be a loop free connected 4-regular planar graph. If $|E|=16$, how many regions are there in a planar depiction of $G$?
+
+\item Prove that every loop-free connected planar graph has a vertex $v$ with $deg(v)<6$.
+
+\item Let $G=(V,E)$ be a loop-free connected planar graph. If $G$ is isomorphic to its dual and $|V|=n$, what is $|E|=?$.
+
+\item Let $G_1,G_2$ be two loop-free connected undirected graphs. If $G_1,G_2$ be homeomorphic, prove that (a) $G_1,G_2$ have the same number of vertices of odd degree; (b) $G_1$ has an Euler trail if and only if $G_2$ has an Euler trail; and (c) $G_1$ has an Euler circuit if and only if $G_2$ has an Euler circuit.
+
+\item How many Hamilton paths are possible in $C_9$?
+
+\item How many Hamilton paths are possible in $K_9$?
+
+\item What are the total number of edge disjoint Hamilton cycles in a complete graph $K_n$ where n is odd? 
+	
+\item Show that the hypercube $Q_n$ with $n>1$ has a Hamilton cycle.
+
+	
+\item Let $G=(V,E)$ be a loop-free undirected n-regular graph with $|V|\geq 2n+2$. Prove that $\overline{G}$ has a hamilton cycle.
+
+  
+	
+	
+	
+
+
+
+
+\end{enumerate}
+
+
+\end{document}
+
+

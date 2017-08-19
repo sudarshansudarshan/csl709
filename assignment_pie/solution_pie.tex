@@ -1,0 +1,149 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\definecolor{indigo}{RGB}{75,0,130}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Solutions for Assignment 6\\ Principle of Inclusion and Exclusion}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+   
+\item We must find positive integer solutions for $x_1+x_2+x_3+x_4+x_5=15$, where $1\leq x_i\leq 4$ for all $1 \leq i \leq 5$.\\
+This is equal to the non-negative integer solutions for $y_1+y_2+y_3+y_4+y_5=10$, where $0\leq y_i\leq 3$ for all $1 \leq i \leq 5$.\\
+We denote the condition $c_i$ for $1 \leq i \leq 5$ as the solutions where $y_i >3$ and $y_j \geq 0$ for $1\leq j\leq 5$ and $i \neq j$. Therefore, to find solutions for $N(c_1)$ we would find the positive integer solutions for the equation $z_1+z_2+z_3+z_4+z_5=6$, where $z_1+4=y_1;z_i=y_i$ for all $2 \leq i \leq 5$.\\
+
+Similarly, for $N(c_ic_j)$ we would find the positive integer solutions for the equation $w_1+w_2+w_3+w_4+w_5=2$, where $w_i+4=y_i;w_j+4=y_j;z_k=y_k$ for all $1 \leq k \leq 5; k \neq i,j$.\\
+
+We determine the solution as :
+\begin{align*}
+N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\overline{c_4}~\overline{c_5}) &= S_0-S_1+S_2-S_3+S_4-S_5 \\
+& = {{5+10-1} \choose 10} - {5 \choose 1}{10\choose 6} + {5\choose 2}{6\choose 2}-0+0-0\\
+&= {14\choose 10}- {5 \choose 1}{10\choose 6} + {5\choose 2}{6\choose 2}
+\end{align*}
+However, for each such arrangement, we have 15! ways of placing the muffins by permuting them. Hence the total arrangements possible would be 15! times the above solution. 
+
+
+\item We denote $c_i$ to denote the condition that $i$ did not appear in any of the dice. Now all we have to determine is $N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\overline{c_4}~\overline{c_5}~\overline{c_6})$. Using the principle of inclusion and exclusion, we have the solution as below:\\
+$[6^8-{6\choose 1}{5^8}+{6\choose 2}{4^8}-{6\choose 3}{3^8}+{6\choose 2}{2^8}-{6\choose 1}{1^8}]/6^8$\\
+The division by $6^8$ to divide by the total sample space.
+
+\item For $1\leq i \leq 7$, let $c_i$ denote the situation where the $i^{th}$ friend was at lunch with her. We need to determine if $N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\dots~\overline{c_7})$ is positive or not. \\
+\begin{align*}
+N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\dots~\overline{c_7}) &= 84- {7\choose 1}{35} + {7\choose 2}{16} -{7\choose 3}{8}+ {7\choose 4}{4} -{7\choose 5}{2}+ {7\choose 6}{1} -{7\choose 7}{0}\\
+&=0 
+\end{align*} 
+Hence we can conclude that she always had company for lunch.
+
+\item Let $c_1$ denote the presence of consecutive E's in the arrangement, likewise $c_2,c_3,c_4,c_5$ are for N's O's R's S's respectively. \\
+\begin{enumerate}
+\item no consecutive identical letters
+\begin{align*}
+N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\dots~\overline{c_5}) &= S_0-S_1+S_2-S_3+S_4-S_5\\
+&= {14!/(2!)^5}-{{5\choose 1}[13!/(2!)^4]}+ {{5\choose 2}[12!/(2!)^3]}-{{5\choose 3}[11!/(2!)^2]}+ {{5\choose 4}[10!/(2!)]} -9!
+\end{align*}
+\item If $E_m$ denotes the number of elements in the set that satisfy precisely $m$ conditions out of $t$ condition,  we have : \\
+$E_m = S_m - {{m+1} \choose 1}S_{m+1} + {{m+2} \choose 2 S_{m+2}} \dots (-1)^{t-m}{{t} \choose {t-m}} S_{t}$\\
+
+
+$E_2 = S_2-{{3\choose 1}S_3}+{{4\choose 2}S_4}-{{5\choose 3}S_5}$
+\item If $L_m$ denotes the number of elements in the set that satisfy at least $m$ conditions out of $t$ condition,  we have : \\
+$L_m = S_m - {{m} \choose {m-1}}S_{m+1} + {{m+1} \choose {m-1}} S_{m+2} \dots (-1)^{t-m}{{t-1} \choose {m-1}} S_{t}$\\ $L_3 = S_3 - {{3\choose 2}S_4} +{{4\choose 2}S_5}$
+\end{enumerate}
+
+\item For $1\leq i \leq7~, c_i$ denote the condition that $i$ is not in the range of $f$. \\
+Functions where $|f(A)|=4$ is given by:
+\begin{align*}
+E_3&= 	S_3 - {{4\choose 1}S_4} + {{5\choose 2}S_5} - {{6\choose 3}S_6} + {{7\choose 4}S_7}\\
+&= {{7\choose 3}4^{10}} - {{4\choose 1}{7\choose 4}3^{10}} + {{5\choose 2}{7\choose 5}2^{10}} - {{6\choose 3}{7\choose 6}1^{10}} + {{7\choose 4}{7\choose 7}0^{10}}
+\end{align*}
+
+For functions where $|f(A)|\leq 4$ we have $L_3 = S_3 - {{3\choose 2}S_4} + {{4\choose 2}S_5} -  {{5\choose 2}S_6} + {{6\choose 2}S_7} $
+
+\item Given we model the problem as $1\leq i\leq 4$ where $c_i$ denotes void in clubs($i=1$), diamonds($i=2$), hearts($i=3$), spades($i=4$).\\
+\begin{enumerate}
+\item The probability that at least one from each suit is included is = $N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\overline{c_4})/ {52\choose 13} = {52 \choose 13} -{4\choose 1}{39 \choose 13} + {4\choose 2}{26 \choose 13} - {4\choose 3}{13 \choose 13}$ 
+
+\item The probability of exactly one void is $E_1/{52\choose 13}$ where $E_1 = S_1-{{2\choose 1}S_2} + {{3\choose 2}S_3} -{{4\choose 3}S_4} = {{4\choose 1}{39\choose 13}} -2{{4\choose 2}{26\choose 13}} + 3{{4\choose 3}{13\choose 13}} - 0 $
+
+\item  The probability of exactly two void is $E_2/{52\choose 13}$ where $E_2 = S_2-{{3\choose 1}S_3} = {{4\choose 2}{26\choose 13}} - 3{{4\choose 3}{13\choose 13}}$ 
+\end{enumerate} 
+
+
+\item 
+\begin{enumerate}
+\item $(d_{10}^2)$, where $d_{10}$ denotes the number of derangements of 10 items. 
+\item From $1\leq i\leq 10$ let $c_i$ denote that goon i gets back both his possessions.\\
+$N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\dots~\overline{c_10}) = (10!)^2 - {{10\choose 1}9!^2} + {{10\choose 1=2}8!^2} \dots ~ (-1^{10}){{10\choose 0}0!^2}$
+\end{enumerate}
+
+
+\item 
+\begin{enumerate}
+\item $(12!)d_{12}$
+\item $12!{12\choose 6}d_6$
+\end{enumerate}
+
+
+
+
+\item We first construct the matrix that represents the students in rows and the subjects in columns and the forbidden assignments. We then write the rooks polynomial for the board where the rooks are considered to be placed on the forbidden slots as below: \\ 
+$r(C,x)=(1+4x+3x^2)(1+4x+2x^2)= 1+8x+21x^2+ 20x^3+6x^4$\\
+For $1\leq i \leq 5$, let $c_i$ be the condition that an assignment is made with person $i$ assigned to a language he/she wishes to avoid.\\
+
+$N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\overline{c_4}~\overline{c_5}) = 5!-8(4!)+ 21(3!) -20(2!) +  6(1!) = 20 $ \\
+
+The above can be easily obtained by using the coefficients of the rook polynomial as $S_i = r_i(5-i)!$ where $r_i$ is the coefficient of $x^i$. 
+
+
+\item In this question, we see the benefit of rearranging the rows and columns of the matrix representing the forbidden arrangements. \\
+Assume the rows to be in the order 1,5,3,4,2,6 and columns in the order 1,5,2,4,6,3. \\
+Now when we mark the forbidden slots, we can see that the resulting board can be broken into smaller independent boards. Same as in the previous example, we construct the rook polynomial for arranging the rooks in the forbidden slots rather than constructing it for the fr
+
+$r(C,x)=(1+4x+2x^2)(1+3x+3x^2)(1+x)=1+8x+22x^2+25x^3+12x^4+2x^5$\\
+For $1\leq i \leq 6$, let $c_i$ denote the condition that all 6 values appear on the red and green die after rolling 6 times but $i$ appeared on the red die paired with one of the forbidden numbers on the green. \\
+
+$N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\overline{c_4}~\overline{c_5}~\overline{c_6}) = 6!-8(5!)+ 22(4!) -25(3!) +  12(2!) - 2(1!) + 0(0!) = 160 $\\
+Then the probability that every value came up on the die is: $(6!)(160)/[(28)^6]$ 
+
+
+\item Here we have $r(C,x) = 1+8x+20x^2+17x^3+4x^4$\\
+Let the conditions be specified as follows:\\
+$c_1: f(1)= v\ or\ w$\\
+$c_2: f(2)= u\ or\ w$\\
+$c_3: f(3)=x$\\
+$c_4: f(4)= v\ ,x\ or\ y$\\ 
+The solution to be posed problem is $N(\overline{c_1}~\overline{c_2}~\overline{c_3}~\overline{c_4})= 6!-8(5!)+20(4!)-17(3!)+4(2!)=146$
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+\end{document}

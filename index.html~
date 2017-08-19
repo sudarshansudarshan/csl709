@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+           <link rel="Stylesheet" href="styles/basic.css" type="text/css" />
+           <title>CSL105 - Discrete Math</title>
+
+    </head>
+    
+    <body>		
+        
+        <header id="header">
+            <div id="logo">
+                <h1>CSL105 Discrete Mathematics</h1>
+            </div>
+        </header>
+        
+        <main>
+            <div class="innertube">
+                
+                
+                <div class="bluecenter">
+              <h2>
+                    <a id="course-introduction" class="anchor" href="#course-introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>COURSE INTRODUCTION</h2>
+                </div>
+                  <p>This is a prerequisite course for almost all subjects/topics of computer science that you will study in the forthcoming semester. The word discrete in discrete mathematics has dual meaning: one being an antonym of the word continuous, which signifies, we are going to deal with the number line comprising of integers. The second being a discrete bunch of prerequisite topics for computer science, stitched together and offered as a subject. Most of the topics that will be covered in the course do not assume any prerequisites and our discussions will resemble puzzle solving sessions. The subject is very fascinating and it has been my observation that many graduating students regard this as one of their favourite subjects. Apart from aiding as a prerequisite to other courses, discrete mathematics helps in heightening the mathematical aptitude of a student. If you ever enjoyed puzzle solving, you will like the ride through this subject. The treatment of the subject is excellent in the prescribed text book (mentioned below). The text book gets to the level of a college fresher without assuming any preliminary knowledge. The motivation of concepts is through several worked examples which makes learning easy and fun. The textbook has a historical account that appears at the end of every chapter, which I recommend you all to read without fail. There are several nice books and popular science articles on this subject which I can pass on to you people if you are interested. You are encouraged to read up extra material and discuss the same with the course instructor and TA beyond the class and office hours. We sincerely hope that you enjoy this course at its fullest.
+                  </p>
+                <p><b>Primary Textbook</b>
+                <br>The textbook for the course is <i>Discrete and Combinatorial Mathematics, 5th Edition by Ralph P. Grimaldi</i>. We will cover most of the chapters from this text book. This book is available on Flipkart and Amazon. I personally liked the e-version of the book which is available for a nominal price on Amazon (click <a href="http://www.amazon.com/Discrete-Combinatorial-Mathematics-Pearson-International-ebook/dp/B00IZ0L3XU/ref=tmm_kin_title_0?_encoding=UTF8&sr=&qid=">here,</a>). This e-version opens on your desktop/tablet. I strongly suggest that you buy an e-version instead of a hard copy as it helps you annotate the text and helps you search through the text easily. There is a third version of this book available as a PDF document online (if you google), although I am not sure whether this is a legal or a pirated one.
+                </p>
+                
+                
+                <b>Secondary Textbooks</b>
+                <br>A few topics will be covered from the following text books:
+                <p><i>Introduction to algorithms by Cormen et al.</i></p>
+                <p><i>Discrete Mathematics and its applications by Kenneth Rosen</i></p>
+                </p>
+                
+                <p></p>
+                <p></p>
+                <p></p>
+                
+               <br><hr> <br>
+                 <div class="bluecenter">
+               <h2>
+                   <a id="syllabus" class="anchor" href="#syllabus" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SYLLABUS</h2>
+               </div>
+                
+                <p>Items 1 to 24 will be covered before midterm exams.</p>
+                
+                <p>Items 25 to 50 will be covered after midterm exams. </p>
+                
+                
+                <p><em>Please note:
+                    Each item presented below does not denote a class session of 50 minutes duration. They are just the list of topics that will be covered.</em></p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sl. No.</th>
+                            <th>Topic</th>
+                            <th>Reference Material</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Introduction to Counting</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Permutations</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Combinations: The binomial theorem</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Combinations with repetition</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>The Catalan numbers</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>The well ordering principle</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Mathematical Induction</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Introduction to Functions and Relations</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Cartesian Products and Relations</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Functions: Plain and 1-1</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Onto Functions: Stirling Numbers of the second kind</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>The pigeonhole principle</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Function composition and inverse functions</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>
+                                Properties of relations
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>
+                                Partial Orders: Hasse Diagrams
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>
+                                Equivalence Relations and Partitions
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+			    <td>Introduction to Set theory<font color='red'>(excluded)</font>
+			    </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+			    <td>Countable and Uncountable sets<font color='red'>(excluded)</font>
+			    </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>
+                                Introduction to Graph Theory
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>
+                                Euler Trails and Circuits
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>
+                                Planar Graphs
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>
+                                Hamilton Paths and Cycles
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>
+                                Graph coloring and chromatic polynomials
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Trees</td>
+                            <td>Grimaldi</td>
+                        </tr>
+			     <tr>
+                            <td>25</td>
+                            <td>Introduction to Logic</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Basic Connectives and Truth Tables</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>The laws of logic</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Rules of inference</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Quantifiers</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Quantifiers, Definitions and Proofs</td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>
+                                Introduction : principle of inclusion and exclusion
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>
+                                Generalizations of the principle
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>
+                                Derangements: Nothing is in the right place
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>
+                                Rook Polynomials
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>
+                                Arrangements with forbidden positions
+                            </td>
+                            <td>Grimaldi</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>
+                                Introduction to Generating Functions
+                            </td>
+                            <td>Grimaldi</td>
+                            <tr>
+                                <td>37</td>
+                                <td>
+                                    Partitions of integers
+                                </td>
+                                <td>Grimaldi</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>
+                                    The exponential generating functions
+                                </td>
+                                <td>Grimaldi</td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>
+                                    Introduction to Recurrences
+                                </td>
+                                <td>Cormen</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>
+                                    Recurrence relations and Computing
+                                </td>
+                                <td>Cormen</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>
+					Substitution method for solving recurrences <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Cormen</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>
+                                    Recursion tree method <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Cormen</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>
+                                    The master method <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Cormen</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>
+                                    Introduction to Number theory <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>Congruences<font color='red'>(excluded)</font> </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>
+                                    Basic results <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td>
+                                    Public Key Cryptography <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>
+                                    Introduction to Algorithms <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <tr>
+                                <td>49</td>
+                                <td>
+                                    The Growth of functions <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>
+                                    Complexity of Algorithms <font color='red'>(excluded)</font>
+                                </td>
+                                <td>Rosen</td>
+                            </tr>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+		The topics with the "excluded" tag will be covered only if time permits. 
+                
+                <br><hr><br> 
+                <div class="bluecenter">
+                <h2>
+                    <a id="marks-distribution" class="anchor" href="#marks-distribution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MARKS DISTRIBUTION</h2>
+                </div>
+                
+                <p>Test 1 will be conducted in the class on 3rd February 2017, 8 am to 8:50 am</p>
+                <p>Test 2 will be conducted in the class on 12th April 2017, 4:15 pm to 5:05 pm </p>
+                <p>Midterm will be for 2 hours as per the timetable</p>
+                <p>Finals will be for 3 hours as per the timetable</p>
+                <p></p>
+                <p></p>
+                <p>Minimum Passing Marks : 30 (Absolute)</p>
+                <p> The course will comprise of several quizzes, you can expect 1 to 2 short duration quizzes every week. Quizzes will be announced (at least 1 day in advance). It will mostly be on the day of tutorials.
+                </p>
+                
+                
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Track 1</th>
+                            <th>Track 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20%     Quiz</td>
+                            <td>20%     Quiz</td>
+                        </tr>
+                        <tr>
+                            <td>10%     Test 1</td>
+                            <td>10%     Test 1</td>
+                        </tr>
+                        <tr>
+                            <td>15%     Midterm</td>
+                            <td>30%     Midterm</td>
+                        </tr>
+                        <tr>
+                            <td>10%     Test 2</td>
+                            <td>10%     Test 2</td>
+                        </tr>
+                        <tr>
+                            <td>45%     Final</td>
+                            <td>30%     Final</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p><br>
+                <strong>Total marks = Maximum of marks secured in track 1 and track 2.</strong>
+                <br><br></p>
+                
+                <p><em>Let us illustrate this with an example:</em></p>
+                
+                <p>Assume a student A secured the following marks</p>
+                
+                <p>30 out of 100 in mid term</p>
+                
+                <p>90 out of 100 in final
+                <br><br></p>
+                
+                <p>And student B secured:</p>
+                
+                <p>90 out of 100 in mid term</p>
+                
+                <p>30 out of 100 in final
+                <br><br></p>
+                
+                <p>Student A will secure:</p>
+                
+                <p>0.15(30) + 0.45(90) = 45 in track 1</p>
+                
+                <p>0.30(30) + 0.30(90) = 36 in track 2</p>
+                
+                <p>Hence the final marks of Student A in midterm + final = max (45,36) = 45 marks <br><br></p>
+                
+                <p>Student B will secure:</p>
+                
+                <p>0.15(90) + 0.45(30) = 27 in track 1</p>
+                
+                <p>0.30(90) + 0.30(30) = 36 in track 2</p>
+                
+                <p>The final marks of Student B in midterm + final = max (27,36) =36 marks</p>
+                
+                
+               <br><hr> <br>
+                
+                   <div class="bluecenter">
+                 <h2>
+                     <a id="learners-armour" class="anchor" href="#earners-armour" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LEARNERS ARMOUR</h2>
+                 </div>
+                
+                <p>With the intention of protecting the interest of students and fostering a dynamic learning experience, the instructor plans to set up the following mechanisms/protocols to ensure that the students get the best from this course:</p>
+                
+                <p> 1. In case the student finds it difficult to understand any of the concepts covered in the class, s/he is requested to email the instructor asking for help within 5 working days from the day of the class. The instructor along with the TA will make sincere attempts to ensure that a time is scheduled within the next 1 week to clarify the doubt or redo that part of teaching, if required. </p>
+                
+                <p> 2. Irrespective of the official/personal commitments of the instructor, the instructor will stick to the scheduled date/time of the class and will never prepone or postpone the class’ date/time under any circumstance. The instructor will never schedule an extra class beyond the scheduled class hours. If there is a need for one, the instructor will record a few video lectures and pass it on to everyone well in advance, which will serve as a replacement for the extra classes. </p>
+                
+                <p> 3. Irrespective of any academic/official/personal engagements, the instructor will ensure that he is present in the class before the commencement time of the class. In no case will the instructor be late by even a minute. Also, under no circumstance will the instructor continue to engage the class a minute beyond the scheduled 50 minutes.</p>
+                
+                <p> 4. The instructor will strictly stick to the list of topics presented in the table in the same order to the best possible extent.</p>
+                
+                <p> 5. The instructor maintains an anonymous feedback form at the following link: <a href="http://goo.gl/n6P27i">http://goo.gl/n6P27i</a>. You are requested to post your concerns/complaints/feedback here. Every feedback we receive will be discussed in the class and solved. 
+                
+                <p> 6.The instructor will, under no cost, change the marks distribution, syllabus or introduce any perk/point not listed in this document. after 10th of January 2017.</p>
+                
+                <p> 7. The instructor guarantees that the tutorial sheets will serve as a model for the kind of questions that will appear in the tests and exams. The student should never be in the state of not knowing how to prepare and what to prepare. You are guaranteed to do very well if you are attending the classes, reading all the topics from the references provided and solving all the tutorial problems.</p>
+                
+                <p> 8. The course assumes that the student is spending about 4 to 5 hours per week outside the class hours in understanding the subject material. In case the student is struggling beyond these many hours, it can be detrimental to his/her overall progress in the semester. In such a situation, you are requested to meet the instructor at the earliest possible time by fixing an appointment. The instructor will evaluate your preparedness for the topics covered in the course and will advise you on ways to improve your understanding of the course content. </p>
+                
+                
+                
+                <br><hr><br>  
+                   <div class=bluecenter>
+                <h2>
+                     <a id="frequently-asked-questions" class="anchor" href="#frequently-asked-questions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FREQUENTLY ASKED QUESTIONS</h2>
+                 </div>
+                
+                <p><strong>Q1. The marks distribution looks strangely different. Why?</strong>
+                <br>
+                It is observed that there are two categories of students, ones who perform consistently well and the ones who are slow bloomers. Respecting this, the instructor has decided to evaluate a student in two different ways and take the maximum of the two distributions. For instance, if you end up securing less marks in the minor exam, you will still have hopes to perform well in the major exam and compensate for it because we will consider track 1 distribution. If you are a consistent student and have done well in the minor but not so well in the major, you are well protected by the track 2 distribution. Please note that the marks distribution is final and there will be no changes to it.
+                <br><br>
+                <strong>Q2. Why are there no assignments in this course?</strong><br>
+                While the instructor understands that the homework assignments give the students a different kind of learning advantage in comparison to the time bound tests/exams, it was noted in the past that the plagiarism/copying related strategies which a few students resort to, give them unwarranted edge over the faithful and sincere ones. To protect the interests of sincere students, the instructor has decided to not have a homework component in the course.
+                <br><br>
+                <strong>Q3. I learn the best when I am given homeworks/assignments. How else will a student get to achieve depth if one does not solve assignment or homework problems at one’s own pace?</strong><br>
+                The instructor completely understands this point and strongly believes that the students should spend quality time in solving problem sets with varying difficulty levels. In this connection, we will ensure that problem sets are given in the form of tutorial-sheets well in advance to students so that they spend time solving them independently/collaboratively. After about a week, these questions will be discussed and solved in the Tutorial sessions by the TA/instructor. It is important for the student to be self motivated enough to attempt the questions provided in the tutorial-sheet. The questions in the tutorial-sheet are indicative of the difficulty level of the questions that will be asked in the tests and exams. In fact, a few questions in the minor/major will be directly picked from these tutorial-sheets. 
+                <br><br>
+                <strong>Q4. How do I ensure that I perform well in this course?</strong><br>
+                You are more likely to get a very good grade if you do the following: 
+                Attend the lectures, follow up with the instructor and TA if you don’t understand a concept. 
+                Solve the problem sets given in the form of tutorial sheets before coming to the tutorial classes.
+                Ensure that you understand the topics by reading the material from the references provided.
+                Take the quizzes seriously, which will help you stay with the pace of the classes.
+                <br><br>
+                <strong>Q5. I am not sure what is the actual course load. What if it gets heavy and affects my overall semester’s progress.</strong><br>
+                This is very unlikely, given that the instructor has made every attempt to keep the course organized with deviations minimized. Beyond this, at any point of time, if you think you are struggling with the course, you should talk to the instructor/TA immediately, we can take a closer look at your problem and with a “high probability” solve it for you. The course is all about probabilistic solutions to problems which the instructor and TA seem to be a little versed with :-)
+                <br><br>
+                <strong>Q6. If I have a serious complaint with the way the course is conducted or if there is any other issue which I cannot directly convey, fearing that it can be mistaken for insubordination, how do I go about it?</strong><br>
+                Despite our best efforts, if there is something that you don’t like about the way the course is conducted (by the instructor or by the TA), be it teaching/evaluation/partiality, you may please use the anonymous link to post your grievance: <a href="http://goo.gl/forms/pPJKQvSLwJ9mFpNx2">http://goo.gl/forms/pPJKQvSLwJ9mFpNx2</a> . We will immediately act on it with the benefit of doubt, always given to the students. 
+                <br><br>
+                <strong>Q7.  I am into extra curricular activities and cannot give a whole lot of time for studies, do you think i will be risking it by taking up this elective?</strong><br>
+                Extra curricular activities are as important as academics. We encourage you to participate and suggest that you strike a good balance between the two. In order to encourage the students to spend good amount of time in their holistic development outside academics, the CSL105 course is structured in a way that we don’t expect beyond 4 to 5 hours of your study time per week, which amounts to 56 hrs to 70 hrs in the semester.
+                <br><br>
+                <strong>Q8. What will be asked in the quizzes? Will it be surprise or announced?</strong><br>
+                Quizzes will test your understanding of the concepts, it will be of short duration and straightforward questions. Anyone who has sat through the lectures can easily answer them. Every quiz will be pre-announced by at least a day’s time in advance (over email). There will be 1 to 2 quizzes every week each of 5 to 10 mins duration. More details about the quiz will be shared on the first day of the class.
+                <br><br>
+                <strong>Q9. Is the grading in the tests/exams boolean or do we get marks for partial attempts?</strong><br>
+                The valuation (/marking) scheme and solution to the test/exam questions will be shared with everyone. The marking will not be boolean, you will get marks for partial attempts as described in the scheme of valuation.
+                <br><br>
+                <strong>Q10. I love programming! I don’t see any programming component in this elective. Why?</strong><br>
+                We feel the course is already heavy for 4 credits, including a programming component will tax the student a bit too much. We will be giving you interesting programming questions and exploratory assignments to try by yourself, these will not be graded.
+                <br><br>
+                <strong>Q11. How are the grade letters assigned in this course?</strong><br>
+                It has been our sincere observation from our experience so far that it is tough to decide the grading mechanism a priori and do justice to students. The instructor will decide on the grade letter breakups after observing the final performance of the students. The grading will be fair, in the sense that, it  will distinguish students on the basis of their understanding and efforts. Every attempt will be made in ensuring that the evaluation is such that the “naturally talented”, “high IQ-ed” and “intelligent” students will not have an undue advantage over a “hardworking” and “sincere” student.
+
+                <br><br><hr><br>
+
+                    <div class=bluecenter>
+                  <h2>
+                      <a id="class-coverage" class="anchor" href="#class-coverage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CLASS COVERAGE</h2>
+                  </div>
+                
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>S. No.</th>
+                            <th>Date-Time</th>
+                            <th>Summary of Topics Covered</th>
+			    <th>Lecture notes/References</th>
+			    <th>Comments</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>4 Jan <br>(16:15-17:05)</td>
+                            <td>This lecture introduced the structure and a brief introduction of the course along with an intersting puzzle on combinatorics. </td>
+                            <td>Chapter 1<br> Grimaldi</td>
+			    <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>5 Jan<br> (13:30-14:20)</td>
+                            <td>This lecture covered two problems: finding the number of binary search trees and the number of valid parentheses. Catalan numbers were used to solve them.  </td>
+                            <td>Chapter 1<br> Grimaldi</td>
+			    <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>6 Jan<br> (08:00- 08:50)</td>
+                            <td>The concept of Catalan numbers was discussed in detail. Additionally, the concept of Pigeonhole principle was discussed and used in understanding Erdos-Szekeres sequence.</td>
+                            <td>Chapter 1<br> Grimaldi and class notes</td>
+			    <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>6 Jan<br> (14:25- 15:15)</td>
+                            <td>This lecture covered some problems covering basic topics like sum rule, product rule, permutations, combinations and binomial theorem along with combinations with repetitions.</td>
+                            <td>Chapter 1<br> Grimaldi</td>
+			    <td></td>
+			    </tr>
+		        <tr>
+                            <td>5</td>
+                            <td>11 Jan<br>(16:15-17:05)</td>
+                            <td>In this lecture, we revisited the Erdos-Szekeres sequence and saw the complete proof. We also saw how the claim does not hold for a smaller length integer sequence. We also took a look at Binomial theorem and supplied a combinatorial proof for the expansion. We saw that the proof can be easily extended to a multinomial expansion.</td>
+                            <td>Chapter 1<br>Grimaldi and class notes</td>
+			    <td></td>
+                        </tr>
+			 <tr>
+                            <td>6</td>
+                            <td>12 Jan<br> (13:30-14:20)</td>
+                            <td>We looked at the different instances where we would come across <sup>n</sup>C<sub>2</sub> and saw quite a few seemingly unrelated instances. We also observed how the same question when viewed from two differnt perspectives can have different answers and still have both the answers correct. This was the case with the ice-cream parlour problem. We supplied the proof of correctness for both the answers. We took a look at combinations with repetitions and proved why it would be <sup>n+r-1</sup>C<sub>r-1</sub>. We proved this by establishing a bijection to a seemingly easier set of objects and gave a count of the number of objects in this new set.</td>
+                            <td>Chapter 1<br>Grimaldi </td>
+			    <td></td>
+                        </tr>
+			<tr>
+                            <td>7</td>
+                            <td>13 Jan<br> (14:25-15:15)</td>
+                            <td> The main focus of this lecture was to understand mathematical induction. We solved a few example problems such as Euler's formula (v-e+r=2), edge node relationship in a tree (acyclic connected graph), the sum of the first n natural numbers, etc. It was left as an exercise to think about the induction that goes in the proof of the maximum contigious subarray problem.</td>
+                            <td>Chapter 4<br>Grimaldi</td>
+			    <td></td>
+                        </tr>
+			    <tr>
+                            <td>8</td>
+                            <td>18 Jan<br> (16:15-17:10)</td>
+                            <td> We formalized the notion of mathematical induction, defined the statement and took a look at its proof. In its proof we defined and saw the use of the principle of well ordering. We discussed on the non-trivial examples where we encounter mathenatical induction: the monks; Konigsberg bridge; maximum contigious subarray; etc. We briefly discussed another problem of showing that every integer greater than equal to 14 can be written as the sum of 8s and 3s. We then began with the chapter on functions and relations. We defined a function, one-one function, and onto functions.</td>
+                            <td>Chapter 4<br>Grimaldi</td>
+			    <td></td>
+                        </tr>
+			    <tr>
+                            <td>9</td>
+                            <td>19 Jan<br> (13:30-14:20)</td>
+                            <td> We had a few warm up exercises of different functions that qualify as either one-one or onto, or both or neither. We saw how establishing one-one and onto nature of functions help in making counting arguments. In this regard, we saw the example of Catalan numbers.</td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+                        </tr>
+			     <tr>
+                            <td>10</td>
+                            <td>20 Jan<br> (08:00-08:50)</td>
+                            <td> We solved a few problems that involved counting the different kind of functions given a finite domain and co-domain.</td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+                        </tr>
+			    <tr>
+                            <td>11</td>
+                            <td>20 Jan<br> (14:25-15:15)</td>
+                            <td> We continued with the questions asked in the previous class. We saw a general form to count the number of onto functions. We proved a recurrence to find out the stirling's number and ended answering the question of finding the total number of ways one can factor the number  30030 into its factors. </td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+                        </tr>
+			      <tr>
+                            <td>12</td>
+                            <td>24 Jan<br> (13:30-14:20)</td>
+                            <td> Is it indeed possible to compress data and be able to retrieve the data? That is, is compression even possible, in the literal sense? This is the question we began with and saw how one can use Pigeonhole principle to state the answer. We saw a variety of problems whose proof involves the pigeonhole principle. </td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+</tr>
+<tr>
+                            <td>13</td>
+                            <td>25 Jan<br> (16:15-17:05)</td>
+                            <td> We were introduced to the concept of extended Pigeonhole principle and we looked at few interesting problems that used this concept. The list of problems that were discussed in the class is included in the tutorial section. </td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>14</td>
+                            <td>27 Jan<br> (08:00-08:50)</td>
+                            <td> We discussed the solutions to the second half of the problems given in the assignment 1.</td>
+                            <td>Assignment 1<br></td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>15</td>
+                            <td>27 Jan<br> (14:25-15:15)</td>
+                            <td> We discussed the solutions to the remaining questions given in the assignment 1.</td>
+                            <td>Assignment 1<br></td>
+			    <td></td>
+</tr>
+			      <tr>
+                            <td>16</td>
+                            <td>1 Feb<br> (16:15-17:05)</td>
+                            <td> In today's class we observed the need for having composition of functions. As an example, we took a look at Collatz conjecture and posed a couple of problems on the same. We also stated that the abstraction is important, although it may not have any direct impact, functions are an important concept used in computer science. With this, we began questioning the nature of functions and asked if two functions are one-one, is their composition also one-one? Similarly, if two functions are known to be onto, what can we say about their composition? </td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			     <tr>
+                            <td>17</td>
+                            <td>2 Feb<br> (13:30-14:20)</td>
+                            <td> We revisited the Catalan numbers and saw that along with a closed form, the nth Catalan number can also be given in the form of a recurrence relation. We established the recurrence relation through the example of the balanced paranthesis problem. We also solved the polygon triangulation problem using this recurrence.</td>
+                            <td>Chapter 1<br>Class notes</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>18</td>
+                            <td>3 Feb<br> (8:00-8:55)</td>
+                            <td>Test 1</td>
+                            <td>-<br></td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>19</td>
+                            <td>3 Feb<br> (14:25-15:15)</td>
+                            <td>We took a look at function compositions in detail and showed how inverse of a function, if it exists, is always unique. We also took a look at the similarities in the behaviour of set of all bijective functions and integers. We showed that properties such as associativity, identity, inverses holds in both spaces.</td>
+                            <td>Chapter 5<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>20</td>
+                            <td>8 Feb<br> (16:15-17:05)</td>
+                            <td>We began by defining the notion of a relation. We saw that we can classify the differnt types of relations conditioned on whether the defined relation respects some properties. In this regard, we saw when we define a relation to be reflexive, symmetric and transitive. Through various examples, we saw how a given relation can exhibit all possible combinations of thes properties. We ended the class making the observation that when a relation is reflexive, symmetric and transitive at the same time, the set on which the relation is defined can be partitioned into equivalence classes.</td>
+                            <td>Chapter 7<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			     <tr>
+                            <td>21</td>
+                            <td>9 Feb<br> (13:30-14:20)</td>
+                            <td>We revised the concept of reflexive, transitive and symmetric relations through examples. We also counted the number of relexive relations, symmetric relations on a given set. As per the request of students, we took a look at a special kind of relation - one that is not reflexive but is symmetric and transitive. Despite the fact that, at first it seems impossible to construct such a relation, we showed the existence of many such relations. Through these examples, we were better able to appreciate the definition of symmetric and transitive relations.</td>
+                            <td>Chapter 7<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>22</td>
+                            <td>10 Feb<br> (8:00-8:50)</td>
+                            <td>Revisiting the notion of function composition, we questioned the composition of relations. Noting that a relation is nothing but a subset of the cross products of sets, we saw that composition of relations also defines another relation. We saw how we can capture a relation in a matrix and saw how matrix multiplication translates to composition of relations. </td>
+                            <td>Chapter 7<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>23</td>
+                            <td>10 Feb<br> (14:25-15:15)</td>
+                            <td>We observed the operation of matrices in order to capture composition of relations. We also saw why this operation is true. We also questioned about the properties of a matrix that represents a reflexive relation, transitive relation. We also defined what an antisymmetric relation is and how the matrix of such a relation would look like.</td>
+                            <td>Chapter 7<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>24</td>
+                            <td>15 Feb<br> (16:15-17:05)</td>
+                            <td>We watched a video that discussed the notion of a Hasse diagram. We discussed the concept of a sink and a source and observed that a Poset always has a sink and a source. We learnt how to represent a poset using a Hasse diagram. We saw the importance to have different ways to represent a poset. We briefly saw the need for a technique like that of  Topological sorting. </td>
+                            <td>Chapter 7<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>25</td>
+                            <td>16 Feb<br> (13:30-14:20)</td>
+                            <td>We had previously encountered Equivalence relations. Today we took a look at the detailed proof that shows that every equivalence relation partitions the set into disjoint equivalence classes and vice versa as well. </td>
+                            <td>Chapter 7<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>26</td>
+                            <td>17 Feb<br> (08:00-08:50)</td>
+                            <td>We began learning the concepts of a new chapter - Graph Theory. We undersood what a graph is and its constituents of vertces and edges. We also took a look at what one means by the compliment of a graph. We saw the notion of connected versus disconnected graphs. We asked whether the complement of a disconnected graph is always disconnected and vice versa.</td>
+                            <td>Chapter 11<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			    <tr>
+                            <td>27</td>
+                            <td>17 Feb<br> (14:25-15:15)</td>
+                            <td>We briefly discuused the different notions of a graph such as a walk, cycle, trail, path, circuit, etc. Then we were introduced to the notion of an Eulerian circuit and we took a look at the proof for the presence of an Eulerian circuit in a graph. </td>
+                            <td>Chapter 11<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			      <tr>
+                            <td>28</td>
+                            <td>22 Feb<br> (16:30-17:20)</td>
+                            <td>In today's class we saw the concept of Bell numbers and the notion of graph isomorphism. We also completed the proof for the condition for the relation matrix M(R) to hold in order for the relation R to be transitive.  </td>
+                            <td>Chapter 7,10,11<br>Grimaldi</td>
+			    <td></td>
+</tr>
+			      <tr>
+                            <td>29</td>
+                            <td>23 Feb<br> (13:30-14:20)</td>
+                            <td>We formally defined the notion of graph isomorphism and solved the puzzle of determining if two graphs are isomorphic or not, which was given in the previous class. We majorly solve the first 14 questions of Assignment 2.  </td>
+                            <td>Assignment 2<br></td>
+                <td></td>
+</tr>
+			    <tr>
+                            <td>30</td>
+                            <td>24 Feb<br> (08:00-08:50)</td>
+                            <td>It was majorly a tutorial/assignment solving session. </td>
+                            <td>Assignment 2,3<br></td>
+                <td></td>
+</tr>
+			    <tr>
+                            <td>31</td>
+                            <td>24 Feb<br> (14:25-15:15)</td>
+                            <td>We solved more exercise problems and quickly took a recap of all the topics that have been covered so far and the portions for minor exams.</td>
+                            <td>Assignment 3<br></td>
+                <td></td>
+</tr>
+
+			    <tr>
+                            <td>32</td>
+                            <td>9 Mar<br> (13:30-14:20)</td>
+                            <td>We formally took a look at the Konigsberg problem and showed that there cannot be an eulerian circuit on it. We saw this with the example of a zoo problem and proved it using induction.</td>
+                            <td><br></td>
+                <td></td>
+</tr>
+	     	            <tr>
+                            <td>33</td>
+                            <td>10 Mar<br> (8:00 - 8:50)</td>
+                            <td>We had a tutorial session where the main focus was on solving problems on graphs. The new concepts learnt was that of wheel graphs, subgraphs, induced subgraphs, spanning subgraphs.</td>
+                            <td>Tutorial 5<br></td>
+                <td></td>
+</tr>
+	     	            <tr>
+                            <td>34</td>
+                            <td>10 Mar<br> (14:25 - 15:15)</td>
+                            <td>Today we discussed planarity of graphs and the condition required for a graph to be planar. We discussed the non-planarity of K5, K(3,3) and the Peterson's graph. </td>
+                            <td>Chapter 11<br>Grimaldi</td>
+                <td></td>
+</tr>
+			     <tr>
+                            <td>35</td>
+                            <td>15 Mar<br> (16:15 - 17:05)</td>
+                            <td>We studied a special kind of graph known as a tournament grpahs and we saw that proof for the fact that there is always a Hamilton path on such a graph. Additionally, we saw that any graph on n vertices that satisfies the property that sum of the degree of any two vertices is greater than n-1 is alwaus connected.  </td>
+                            <td>Chapter 11<br>Grimaldi</td>
+                <td></td>
+</tr>
+			     <tr>
+                            <td>36</td>
+                            <td>16 Mar<br> (13:30 - 14:20)</td>
+                            <td>Borrowing ideas from the previous class, we completed the proof for the existence of a Hamiltonian path on any graph on n vertices that satisfies the property that sum of the degree of any two vertices is greater than n-1. </td>
+                            <td>Chapter 11<br>Grimaldi</td>
+                <td></td>
+</tr>
+			    <tr>
+                            <td>37</td>
+                            <td>17 Mar<br> (08:00 - 08:50)</td>
+                            <td>This class focused on introducing the concept of graph colouring (chromatic number of a graph). We took a look at the chromatic number of a complete graph and that of a cycle. We also took a look at the derivation of the chromatic polynomial. </td>
+                            <td>Chapter 11<br>Grimaldi</td>
+                <td></td>
+</tr>
+			 <tr>
+                            <td>38</td>
+                            <td>17 Mar<br> (14:25 - 15:15)</td>
+                            <td>This was a tutorial session where we took a look at some more problems on hamiltonian paths, minimum cut of a graph, etc. </td>
+                            <td>Tutorial 6<br></td>
+                <td></td>
+</tr>   
+			    <tr>
+                            <td>39</td>
+                            <td>29 Mar<br> (16:15 - 17:05)</td>
+                            <td>We discussed the first three units from the text. We discussed the idea of truth tables, tautology, contradiction and satisfiability. We discussed the meanig of p->q in detail with its truth table. We also saw the proofs for well known statements such as "primes are infinite" and "square root of 2 is irrational". We observed the application of the laws of inference in the proofs. We ended the class by solving a few problems on inference rules. </td>
+                            <td>Chapter 2<br></td>
+                <td></td>
+</tr> 
+			    <tr>
+                            <td>40</td>
+                            <td>30 Mar<br> (13:30 - 14:20)</td>
+                            <td>Today we discussed dual of Boolean expression, absorption law, De Morgan's law, proof by contradiction, proof by contraposition and practised some examples. </td>
+                            <td>Chapter 2<br></td>
+                <td></td>
+</tr> 
+			     <tr>
+                            <td>41</td>
+                            <td>31 Mar<br> (08:00 - 08:50)</td>
+                            <td>We discussed qunatifiers, namely 'forall' and 'there exists'. We observed the way to create negation of a given expression. We noted that the definition of convergence of a sequence can be captured using quantifiers and thus one can obtain the negation of the statement. </td>
+                            <td>Chapter 2<br></td>
+                <td></td>
+</tr> 
+			     <tr>
+                            <td>42</td>
+                            <td>31 Mar<br> (02:25 - 03:15)</td>
+				     <td><b>Class Committee Meeting</b></td>
+                            <td>-<br></td>
+                <td></td>
+</tr> 
+                    </tbody>
+                </table>
+                <br><hr><br>
+                <div class=bluecenter>
+                <h2>
+                  <a id="tutorials" class="anchor" href="#tutorials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TUTORIALS</h2>
+              </div>
+              <p> Tutorials will be conducted regularly, you will be provided with tutorial sheets to practice. The difficulty level in the examination will be equivalent to the difficulty level of the tutorial questions. You are advised to solve the questions without referring to any material online/offline, except for the textbook. </p>
+              <p>
+              <a href='tutorial1/tut1.pdf'>Counting - Solved Exercises in the Class on 7th January 2017 </a></p>
+              <p>
+              <a href='tutorial2/tut2.pdf'>Mathematical Induction - Solved Exercises in the Class on 14th and 19th January 2017</a>
+              </p>
+              <p>
+              <a href='tutorial3/tut3.pdf'>Relations and functions - Solved Exercises in the Class on 20th January 2017</a>
+              </p>
+	      <p>
+              <a href='tutorial4/main.pdf'>Pigeonhole Principle - Solved Exercises in the Class on 24th and 25th January 2017</a>
+</p>
+	      <p>
+              <a href='tutorial5/tutorial5.pdf'>Graphs - Solved Exercises in the Class on 10th March 2017</a>
+              </p>
+	      <p>
+              <a href='tutorial6/main.pdf'>Graphs - Problems solved on 17th March 2017</a>
+              </p>
+
+                <br><hr><br>
+	 <div class=bluecenter>
+                  <h2>
+                      <a id="assignments" class="anchor" href="#assignments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ASSIGNMENTS</h2>
+</div>
+		<p>
+              <a href='assignment1/main.pdf'>Assignment 1 - Questions from topics 1-12 in the syllabus </a></p>
+	<p>
+              <a href='Assignment 2/main.pdf'>Assignment 2 - Questions on Relations </a></p>
+	<p>
+              <a href='assignment3/main.pdf'>Assignment 3 - Questions on Graphs </a></p>
+              <p>
+	      <p>
+              <a href='assignment4/graph_assign.pdf'> Assignment 4 - Problems to be solved on 28th March 2017</a>
+              </p>
+	<p>
+              <a href='assignment5/main.pdf'>Assignment 5 - Questions on Logic </a></p>
+	<p>
+		<p>
+              <a href='assignment_pie/logic_assignment.pdf'> Assignment 6 - Questions on Principle of Inclusion and Exclusion</a>
+              </p>
+		<p>
+              <a href='assignment_gf/gf_assignment.pdf'> Assignment 7 - Questions on Generating Functions</a>
+              </p>
+	 	<br><hr><br>
+	
+	 <div class=bluecenter>
+                  <h2>
+                      <a id="videos" class="anchor" href="#videos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Videos</h2>
+</div>
+
+              <p><a href='https://goo.gl/y07YNf'> Introduction to Relations </a></p>
+	      <p><a href='https://goo.gl/voNntO'> 2 Relations: More examples and Posets  </a></p>
+	      <p><a href='https://youtu.be/ICY_kqlj6Nk'> Matrix representations 1  </a></p>
+	      <p><a href='https://youtu.be/TDaRdBWaUwU'> Graph representation and POSETS  </a></p>
+	      <p><a href='https://youtu.be/z-qEcsUMkgM'> POSETS Continued </a></p>
+	<p>
+              <p>
+	 	<br><hr><br>
+                <div class=bluecenter>
+                  <div class=bluecenter>
+                <h2>
+                  <a id="question-papers" class="anchor" href="#qpapers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>QUESTION PAPERS</h2>
+              </div>
+              </div>
+                 <p> <a href='test1/test1.pdf'>Test 1 Question paper </a> </p>
+		<p> <a href='test1/solution/main.pdf'>Test 1 Draft solutions </a> </p>
+		<p> <a href='minor/main1.pdf'>Minor Exam Question paper </a> </p>
+                <p> <a href='minor/solutions.pdf'>Minor Solutions </a> </p>
+            </div>
+        </main>
+        
+        <nav id="nav">
+
+            <div class="innertube">
+              <ul> 
+
+              <div class=nicebox>
+              <a href="#course-introduction">Course Introduction</a>
+              </div>
+
+                <div class=nicebox>
+              <a href="#syllabus">Syllabus</a>
+                </div>
+
+                <div class=nicebox>
+              <a href="#class-coverage">Topics Covered</a>
+                </div>
+
+                <div class=nicebox>
+              <a href="#tutorials">Tutorials</a>
+                </div>
+
+		 <div class=nicebox>
+              <a href="#assignments">Assignments</a>
+                </div>
+
+                <div class=nicebox>
+              <a href="#marks-distribution">Marking Scheme</a>
+                </div>
+
+                <div class=nicebox>
+              <a href="#learners-armour">Learners Armour</a>
+                </div>
+
+                <div class=nicebox>
+              <a href="#frequently-asked-questions">FAQ</a>
+                </div>
+
+                <div class=nicebox>
+              <a href="#question-papers"> Question-Papers</a>
+                </div>
+		      
+                <div class=nicebox>
+              <a href="#videos"> Videos</a>
+                </div>
+		            
+                <div class=nicebox>
+              <a href="#course-blog"> Course BLOG</a>
+                </div>
+
+            </ul>
+          </div>
+       </nav>
+            
+            
+            
+            
+        
+        
+        
+        <p></p>
+        <p></p>
+        <p></p>
+        
+
+    
+    </body>
+</html>
+

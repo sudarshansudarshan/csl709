@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{datetime}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\definecolor{indigo}{RGB}{75,0,130}
+
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{enumitem}   
+
+
+
+\title{Tutorial 3 - Functions and Relations}
+\date{20th January 2017}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Six cars, each of different colors \textcolor{indigo}{I}, \textcolor{blue}{B}, \textcolor{green}{G}, \textcolor{yellow}{Y}, \textcolor{orange}{O}, \textcolor{red}{R} are to race. In how many ways can they hit the finish line.?
+\item You obviously assumed that no two cars can end up in a tie. What if we were to conside the case where ties are possible? The answer isn't obvious! We will solve this question by the end of this tutorial.
+\item Define a binary relation from $A$ to $B$.
+\item What are the total number of relations from $A$ to $B$, assuming these sets to be finite?
+\item What are the total number of relations on a given finite set $S$?
+\item Show that every function is a relation, but not conversely.
+\item What are the total number of functions $f: A\rightarrow B $, given that $A$ and $B$ are finite sets?
+\item What are the total number of 1-1 functions from $A$ to $B$?
+\item What are the total number of onto functions from $A$ to $B$, given that $|A|=3$ and $|B|=2$?
+\item Answer the above question with $|A|=4$ and $|B|=3$.
+\item Do you observe a pattern from the previous two questions? What is the answer in general, for $|A|=m$ and $|B|=n$?
+\item What is the total number of ways you can put $m$ distinct balls into $n$ identical containers?
+\item Show that $S(m+1,n)=S(m,n-1)+nS(m,n)$.
+\item Use the above formula to find $S(6,4)$.
+\item Can you now answer the first question?
+\item In how many ways can we factor 30030?
+\item Observe that the answer for the first question and the previous question is the same. Why?
+
+\end{enumerate}
+
+
+
+
+\end{document}
